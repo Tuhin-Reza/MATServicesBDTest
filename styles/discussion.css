@@ -1,0 +1,563 @@
+/* CSS reset */
+.discussion,
+.discussion * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.discussion {
+    font-size: 62.5%;
+    position: relative;
+    /* height: 100vh; */
+    margin-top: -90px;
+}
+
+.discussion::after,
+.discussion::before {
+    box-sizing: border-box;
+}
+
+/* Typography =======================*/
+
+/* Headings */
+
+/* Main heading for card's front cover */
+.discussion-card-front__heading {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+/* Main heading for inside page */
+.inside-page__heading {
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/* Mixed */
+/* For both inside page's main heading and 'view me' text on card front cover */
+.inside-page__heading,
+.discussion-card-front__text-view {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: .2rem;
+}
+
+
+.inside-page__heading--language,
+.discussion-card-front__text-view--language {
+    color: #2aaac1;
+}
+
+.inside-page__heading--work,
+.discussion-card-front__text-view--work {
+    color: #fa7f67;
+}
+
+.inside-page__heading--study,
+.discussion-card-front__text-view--study {
+    color: #00b97c;
+}
+
+/* Front cover */
+
+.discussion-card-front__tp {
+    color: #fafbfa;
+}
+
+.discussion-icon {
+    border-width: 2px;
+    background-color: #ffffff;
+    height: 70px;
+    width: 70px;
+    line-height: 44px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.language-icon {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* Back cover */
+
+/* For inside page's body text */
+.inside-page__text {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333;
+}
+
+/* Icons ===========================================*/
+
+.discussion-card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+}
+
+/* Buttons =================================================*/
+
+.inside-page__btn {
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: .7rem .75rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 90%;
+    z-index: 10;
+}
+
+.inside-page__btn::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.inside-page__btn--language {
+    border-color: #279eb2;
+    color: #279eb2;
+}
+
+.inside-page__btn--language::before {
+    background-color: #279eb2;
+}
+
+.inside-page__btn--work {
+    border-color: #fa7f67;
+    color: #fa7f67;
+}
+
+.inside-page__btn--work::before {
+    background-color: #fa7f67;
+}
+
+.inside-page__btn--study {
+    border-color: #00b97d;
+    color: #00b97d;
+}
+
+.inside-page__btn--study::before {
+    background-color: #00b97d;
+}
+
+.inside-page__btn:hover {
+    color: #fafbfa;
+}
+
+.inside-page__btn:hover::before {
+    transform: scaleY(1);
+}
+
+/* Container to hold all cards in one place */
+.discussion-area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100%;
+    padding: 1rem;
+}
+
+/* Card ============================================*/
+
+/* Area to hold an individual card */
+.discussion-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+/* A container to hold the flip card and the inside page */
+.discussion-card {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 30rem;
+}
+
+/* Flip card - covering both the front and inside front page */
+/* An outer container to hold the flip card. This excludes the inside page */
+.discussion-flip-card {
+    height: 30rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 30rem;
+    z-index: 100;
+}
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+.discussion-flip-card>* {
+    visibility: visible;
+}
+
+/* An inner container to hold the flip card. This excludes the inside page */
+.discussion-flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.discussion-card-front,
+.discussion-card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Styling for the front side of the flip card */
+
+/* container for the front side */
+.discussion-card-front {
+    background-color: #fafbfa;
+    /* front card  */
+    height: 30rem;
+    width: 30rem;
+}
+
+/* Front side's top section */
+.discussion-card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    /* front upper */
+    justify-content: center;
+    padding: .75rem;
+}
+
+.discussion-card-front__tp--language {
+    background: linear-gradient(to bottom,
+            #47c2d7,
+            #279eb2);
+}
+
+.discussion-card-front__tp--work {
+    background: linear-gradient(to bottom,
+            #fb9b88,
+            #f86647);
+}
+
+.discussion-card-front__tp--study {
+    background: linear-gradient(to bottom,
+            #00db93,
+            #00b97d);
+}
+
+/* Front card's bottom section */
+.discussion-card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the back side of the flip card */
+
+.discussion-card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+}
+
+/* Specifically targeting the <video> element */
+.discuass_img__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Inside page */
+
+.inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 30rem;
+    z-index: 1;
+}
+
+.inside-page__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Functionality ====================================*/
+
+/* This is to keep the card centered (within its container) when opened */
+.discussion-card:hover {
+    box-shadow:
+        -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 60rem;
+}
+
+/* When the card is hovered, the flip card container will rotate */
+.discussion-card:hover .discussion-flip-card__container {
+    transform: rotateY(-180deg);
+}
+
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+.discussion-card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Media Query */
+@media (min-width: 320px) and (max-width: 699px) {
+    .discussion {
+        margin-top: -60px;
+    }
+
+    .discussion-area {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discussion-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+    }
+
+    .discussion-card {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .discussion-flip-card {
+        height: 15rem;
+        width: 15rem;
+
+    }
+
+    .discussion-card-front {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .discussion-card-front__tp {
+        height: 12rem;
+    }
+
+    .inside-page {
+        width: 15rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .discussion-card-front__heading {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .inside-page__heading,
+    .discussion-card-front__text-view {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: .2rem;
+    }
+
+    .language-icon {
+        font-size: 8px;
+    }
+
+    .inside-page__text {
+        font-size: 8px;
+        line-height: 8px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .inside-page__btn {
+        font-size: 1rem;
+        margin-top: -0.2px;
+    }
+
+    .discussion-card:hover {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .discussion {
+        margin-top: -60px;
+    }
+
+    .discussion-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+    }
+
+    .discussion-card {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .discussion-flip-card {
+        height: 15rem;
+        width: 15rem;
+
+    }
+
+    .discussion-card-front {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .discussion-card-front__tp {
+        height: 12rem;
+    }
+
+    .inside-page {
+        width: 15rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .discussion-card-front__heading {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .inside-page__heading,
+    .discussion-card-front__text-view {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: .2rem;
+    }
+
+    .language-icon {
+        font-size: 8px;
+    }
+
+    .inside-page__text {
+        font-size: 8px;
+        line-height: 8px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .inside-page__btn {
+        font-size: 1rem;
+        margin-top: -0.2px;
+    }
+
+    .discussion-card:hover {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .discussion {
+        margin-top: -60px;
+    }
+
+    .discussion-icon {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+
+    .discussion-card {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .discussion-flip-card {
+        height: 20rem;
+        width: 20rem;
+
+    }
+
+    .discussion-card-front {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .discussion-card-front__tp {
+        height: 16rem;
+    }
+
+    .inside-page {
+        width: 20rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .discussion-card-front__heading {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .inside-page__heading,
+    .discussion-card-front__text-view {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-top: .2rem;
+    }
+
+    .language-icon {
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .inside-page__text {
+        font-size: 11px;
+        line-height: 12px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .inside-page__btn {
+        font-size: 1.5rem;
+        margin-top: -0.2px;
+    }
+
+    .discussion-card:hover {
+        width: 40rem;
+    }
+
+}

@@ -1,0 +1,288 @@
+/* Hero Section */
+.services_hero {
+    background-image: url("../images/bg10.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services_hero-title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.servicesPage {
+    font-family: Georgia, serif;
+}
+
+.services {
+    padding: 50px 20px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: Great Vibes;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+
+/* Service Buttons */
+.service-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.service-btn {
+    font-family: Georgia, serif;
+    background-color: #1E3C2D;
+    color: white;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+    font-size: 2.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.service-btn.active {
+    background-color: red;
+    color: white;
+}
+
+.service-btn:hover {
+    background-color: #FF0000;
+}
+
+/* Service Details Hidden Initially */
+.service-details {
+    margin: 0 15px;
+    display: none;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* Active Class to Show Service Details */
+.service-details.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-details h3 {
+    color: black;
+    font-size: 2.8rem;
+}
+
+.service-details p {
+    font-size: 2.3rem;
+    text-align: justify;
+}
+
+.service-details ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Custom list style */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 25px;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.custom-list li:before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-link-btn {
+    font-family: Satisfy;
+    display: inline-block;
+    padding: 1.5rem 1.5rem;
+    background-color: #1E3C2D;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.service-link-btn:hover {
+    background-color: #FF0000;
+}
+
+/* Media Query */
+@media (min-width: 320px) and (max-width: 480px) {
+    .services_hero {
+        background-image: url("../images/about_usBG11.jpg");
+    }
+
+    .services {
+        padding: 0 10px;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .services-container {
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .service-buttons {
+        margin-bottom: 5px;
+        flex-direction: column;
+    }
+
+    .service-btn {
+        font-size: 1.8rem;
+        padding: 20px 10px;
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .service-details {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        border-radius: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .service-details h3 {
+        font-size: 2rem;
+    }
+
+    .service-details p {
+        font-size: 1.8rem;
+    }
+
+    .custom-list {
+        font-size: 1.5rem;
+    }
+
+    .custom-list li {
+        margin-bottom: 5px;
+    }
+
+    .service-link-btn {
+        padding: 15px 1.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .services_hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .services {
+        padding: 0;
+        margin: 0 10px;
+    }
+
+    .services-container {
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-buttons {
+        margin-bottom: 10px;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .service-btn {
+        font-size: 1.8rem;
+        padding: 20px 10px;
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .service-details {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px;
+        border-radius: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .service-details h3 {
+        font-size: 2rem;
+    }
+
+    .service-details p {
+        font-size: 1.8rem;
+    }
+
+    .custom-list {
+        font-size: 1.5rem;
+    }
+
+    .custom-list li {
+        margin-bottom: 5px;
+    }
+
+    .service-link-btn {
+        padding: 15px 1.5rem;
+    }
+}

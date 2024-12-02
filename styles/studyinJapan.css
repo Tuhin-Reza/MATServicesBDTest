@@ -1,0 +1,433 @@
+.studyinJapan_hero {
+    background-image: url("../images/bg10.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.studyinJapan_hero-title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+/* Institute */
+.language-universities {
+    margin: 80px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+}
+
+.language-universities-grid-container {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    text-align: left;
+}
+
+.language-universities-column h2 {
+    margin-bottom: 1rem;
+    font-family: Great Vibes;
+    font-size: 4rem;
+    word-spacing: 12px;
+}
+
+.language-universities-column h2 i {
+    font-size: 25px;
+    color: #FF0000;
+    margin-right: 0.5rem;
+}
+
+.language-universities-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.language-universities-column li {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.language-universities-column ul li i {
+    font-size: 15px;
+    color: #FF0000;
+    margin-right: 0.5rem;
+}
+
+
+/*-------------------Why Japan----------------------*/
+.why_japan {
+    margin: 80px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+}
+
+.why-japan-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.why_japan-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.why_japan-intro h2,
+.study_title {
+    font-family: Great Vibes;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.japan,
+.study {
+    color: #FF0000;
+}
+
+.why_japan-intro p {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.why_japan-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.why_japan-benefit-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.why_japan-benefit-item i {
+    margin-right: 0.5rem;
+}
+
+.why_japan-image-column img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*-----------What To Study------------------*/
+.whatToStudy {
+    margin: 30px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.what-to-study-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.whatToStudy-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whatToStudy-image-column img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.whatToStudy-text-column {
+    padding: 10px;
+}
+
+.whatToStudy-text-column h2 {
+    font-family: Great Vibes;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.whatToStudy-text-column p {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.whatToStudy-study-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.whatToStudy-study-item {
+    display: flex;
+    align-items: center;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.whatToStudy-study-item i {
+    color: red;
+    margin-right: 0.8rem;
+
+}
+
+/* -------------------Others-------------------*/
+.others {
+    display: flex;
+    justify-content: center;
+}
+
+.others-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.others-column {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: justify;
+}
+
+.others-column h3 {
+    font-family: Great Vibes;
+    font-size: 3rem;
+    word-spacing: 12px;
+    margin-bottom: 1rem;
+    color: #FF0000;
+}
+
+
+.others-column p {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.others-column h4 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: #FF0000;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .studyinJapan_hero {
+        background-image: url("../images/about_usBG11.jpg");
+    }
+
+    .language-universities {
+        margin: 10px;
+        padding: 0;
+        padding: 20px 15px;
+        justify-content: left;
+        overflow: hidden;
+    }
+
+    .language-universities-grid-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .language-universities-column h2 {
+        font-size: 1.5rem;
+    }
+
+    .language-universities-column h2 i {
+        font-size: 20px;
+        color: #FF0000;
+        margin-right: 0.5rem;
+    }
+
+    .language-universities-column ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .language-universities-column li {
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-left: 15px;
+    }
+
+    .language-universities-column ul li i {
+        font-size: 12px;
+    }
+
+    /* Why Japan */
+    .why_japan {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .why-japan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .why_japan-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    /*-----------What To Study------------------*/
+    .whatToStudy {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .what-to-study-container {
+        grid-template-columns: 1fr;
+    }
+
+    .whatToStudy-study-areas {
+        grid-template-columns: 1fr;
+    }
+
+    /* Other */
+    .others {
+        margin: 10px;
+    }
+
+    .others-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .studyinJapan_hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .language-universities {
+        margin: 10px;
+        padding: 0;
+        padding: 20px 15px;
+        justify-content: left;
+        overflow: hidden;
+    }
+
+    .language-universities-grid-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .language-universities-column h2 {
+        font-size: 1.5rem;
+    }
+
+    .language-universities-column h2 i {
+        font-size: 20px;
+        color: #FF0000;
+        margin-right: 0.5rem;
+    }
+
+    .language-universities-column ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .language-universities-column li {
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-left: 15px;
+    }
+
+    .language-universities-column ul li i {
+        font-size: 12px;
+    }
+
+    /* Why Japan */
+    .why_japan {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .why-japan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .why_japan-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    /*-----------What To Study------------------*/
+    .whatToStudy {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .what-to-study-container {
+        grid-template-columns: 1fr;
+    }
+
+    .whatToStudy-study-areas {
+        grid-template-columns: 1fr;
+    }
+
+    /* Other */
+    .others {
+        margin: 10px;
+    }
+
+    .others-container {
+        grid-template-columns: 1fr;
+    }
+
+}

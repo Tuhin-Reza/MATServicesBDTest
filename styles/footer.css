@@ -1,0 +1,234 @@
+.footer {
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    background-image: url(../images/world-map.png), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+    background-blend-mode: overlay;
+
+    height: 50vh;
+    padding: 50px 10px;
+    color: #fff;
+    border-top-left-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Set a gap between footer columns */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.logo-content {
+    margin-top: -1px;
+}
+
+.footer-column h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    /* color: #FF0000; */
+}
+
+.mat {
+    color: #FF0000;
+}
+
+.footer-column p {
+    font-size: 1.8rem;
+    color: #ddd;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.footer-column i {
+    margin-right: 10px;
+}
+
+/* Social Icons */
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    margin-right: 15px;
+    transition: color 0.5s;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.footer-column:nth-child(2) {
+    order: 3;
+}
+
+.footer-column:nth-child(3) {
+    order: 2;
+}
+
+.branch-button {
+    font-size: 12px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.branch-button.active {
+    background-color: red;
+    color: #ffffff;
+}
+
+
+.footer-column:nth-child(2) p {
+    position: relative;
+}
+
+.footer-column:nth-child(2) p:hover i {
+    color: red;
+}
+
+.footer-column:nth-child(2) p:hover {
+    color: inherit;
+}
+
+
+/** footer-bottom **/
+.footer-bottom {
+    background: #13151a;
+    padding: 10px 0;
+}
+
+.footer-bottom-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-bottom-left {
+    color: #9ea0a9;
+    text-align: left;
+}
+
+.footer-bottom-right {
+    text-align: right;
+}
+
+.footer-bottom .copyright,
+.footer-bottom .copyright a,
+.footer-bottom .footer-nav li a {
+    color: #9ea0a9;
+    text-decoration: none;
+}
+
+.footer-bottom .copyright a:hover,
+.footer-bottom .footer-nav li a:hover {
+    color: #FF0000;
+}
+
+.footer-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* Responsive */
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 30px;
+        gap: 10px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        border-right: none;
+        align-items: start;
+    }
+
+    .footer-bottom-container {
+        flex-direction: column;
+        align-items: start;
+        padding-top: 20px;
+
+    }
+
+    .footer-bottom-left,
+    .footer-bottom-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .footer {
+        height: auto;
+        gap: 5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 30px;
+        gap: 10px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        border-right: none;
+        align-items: start;
+    }
+
+    .footer-bottom-container {
+        flex-direction: row;
+        /* Keep it row in larger screens */
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}

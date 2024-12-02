@@ -1,0 +1,176 @@
+.bold-point {
+    box-sizing: border-box;
+    margin-top: -200px;
+    overflow: hidden;
+}
+
+.bold-point-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: gm-slidein 3s 1;
+}
+
+
+.bold-point-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 150px;
+}
+
+.hovicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hovicon a {
+    text-decoration: none;
+}
+
+.hovicon i,
+.hovicon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #FF0000;
+}
+
+.hovicon span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px #FF0000;
+    transform: scale(.8);
+    opacity: 0;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Hover effect */
+.hovicon.effect-1.sub-a:hover {
+    background: #ff0000
+}
+
+.hovicon.effect-1.sub-a:hover i,
+.hovicon.effect-1.sub-a:hover span {
+    color: #FFFFFF;
+}
+
+.hovicon.effect-1.sub-a:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*  Animation */
+@keyframes gm-slidein {
+    from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+/* For small screens (mobile, 320px to 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .bold-point-row {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bold-point-block {
+        width: calc(80% - 10px);
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .hovicon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .hovicon i,
+    .hovicon span {
+        font-size: 20px;
+    }
+
+    .hovicon span {
+        font-size: 13px;
+    }
+
+    .hovicon:after {
+        box-shadow: 0 0 0 3px #FF0000;
+    }
+}
+
+/* For medium screens (tablets, 481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .bold-point-row {
+        margin-top: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bold-point-block {
+        width: 25%;
+        height: 120px;
+    }
+
+    .hovicon {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    .hovicon i,
+    .hovicon span {
+        font-size: 25px;
+    }
+
+    .hovicon span {
+        font-size: 15px;
+    }
+
+    .hovicon:after {
+        box-shadow: 0 0 0 3px #FF0000;
+    }
+}

@@ -1,0 +1,26 @@
+/* For small devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    .workinJapan_hero {
+        background-image: url("../images/about_usBG11.jpg");
+    }
+
+    .jobPost {
+        margin: 0 10px;
+        grid-template-columns: 1fr; /* Switch to one column */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .workinJapan_hero {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .jobPost-container {
+        margin: 50px 10px;
+    }
+    .jobPost {
+        margin: 0 10px;
+        grid-template-columns: 1fr; /* Switch to one column */
+    }
+}

@@ -1,0 +1,126 @@
+.heropanel--video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heropanel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire area without distortion */
+    z-index: -1;
+    /* Places the image behind the content */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Adds a dark overlay */
+    z-index: 0;
+}
+
+.heropanel__content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 4em 0 2em;
+    max-width: 50%;
+    margin: 0 auto;
+    animation: gm-slidein 3s 1;
+    border-bottom: 1px solid #ffffff;
+}
+
+.hero-title {
+    color: red !important;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.hero-dis {
+    font-size: 3rem !important;
+    font-weight: bolder !important;
+}
+
+.heropanel__content h1 {
+    margin: 0 0 .5em;
+    font-size: 5rem;
+}
+
+.bd {
+    color: #ff0000;
+}
+
+.heropanel__content h1 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.heropanel__content p {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Animation */
+@keyframes gm-slidein {
+    from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 320px) and (max-width: 480px) {
+    .heropanel--video {
+        height: 100vh;
+    }
+
+    .heropanel__content {
+        max-width: 90%;
+        padding: 2em 0;
+    }
+
+    .heropanel__content h1 {
+        font-size: 2rem;
+    }
+
+    .heropanel__content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .heropanel__content {
+        max-width: 70%;
+        padding: 3em 0;
+    }
+
+    .heropanel__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .heropanel__content p {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,102 @@
+.successStroy {
+    margin: 100px 20px 0;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.successStroy-title {
+    font-family: Great Vibes;
+    color: #000;
+    font-weight: bold;
+    font-size: 5rem;
+    padding-left: 40px !important;
+    word-spacing: 15px;
+}
+
+.success {
+    color: #FF0000;
+}
+
+.successStroy-slider-container {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.successStroy-slider-item {
+    position: relative;
+    padding: 0;
+    /* Remove extra padding */
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    width: 100%;
+    height: 300px;
+    /* Set height to be the same as iframe */
+}
+
+iframe {
+    width: 100%;
+    /* Match iframe width to parent */
+    height: 100%;
+    /* Match iframe height to parent */
+    max-width: 100%;
+    border: 0;
+    /* Optional: Remove border if needed */
+}
+
+/* Slick slider arrow customizations */
+.slick-next:before,
+.slick-prev:before {
+    font-size: 30px;
+    opacity: 0.75;
+    color: #FF0000;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next:hover:before,
+.slick-prev:hover:before {
+    color: #b80000;
+}
+
+/* Prevent video cutting on smaller screens */
+@media (max-width: 768px) {
+    .successStroy-slider-item {
+        height: 250px;
+        /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .successStroy-slider-item {
+        height: 200px;
+        /* Further reduce height on small screens */
+    }
+}

@@ -1,0 +1,40 @@
+.template_hero {
+    background-image: url("../images/about_usBG1.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.template_hero-title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+/* Media Query */
+@media (min-width: 320px) and (max-width: 480px) {
+    .template_hero {
+        background-image: url("../images/about_usBG11.jpg");
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .template_hero {
+        background-size: cover;
+        background-position: center;
+    }
+}
