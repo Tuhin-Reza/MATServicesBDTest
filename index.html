@@ -136,28 +136,40 @@
 
             <section class="mat-news-header">
                 <button class="mat-news-button">Upcoming</button>
-                <div class="mat-news-scroll-container">
-                    <div class="mat-news-scroll-content">
-                        <div class="mat-news-scroll-item">
-                            <span class="news-feed">Event:</span>
-                            <span class="news-label">Title:</span> Event Title,
-                            <span class="news-label">Date:</span> 1st December 2024,
-                            <span class="news-label">Time:</span> 10:00 AM,
-                            <span class="news-label">Platform:</span> Online,
-                            <span class="news-label">Location:</span> Dhaka.
-                        </div>
-                        <div class="mat-news-scroll-item">
+                <div class="scroller" data-speed="fast">
+                    <ul class="tag-list scroller__inner">
+                        <li>
+                            <div class="mat-news-scroll-item">
+                                <span class="news-feed">Event:</span>
+                                <span class="news-label">Title:</span> Event Title,
+                                <span class="news-label">Date:</span> 1st December 2024,
+                                <span class="news-label">Time:</span> 10:00 AM,
+                                <span class="news-label">Platform:</span> Online,
+                                <span class="news-label">Location:</span> Dhaka.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="news-feed">Batch:</span>
+                            <span class="news-label">Course Name:</span> Japanese N4,
+                            <span class="news-label">Start Date:</span> Beginning of January,
+                            <span class="news-label">Duration:</span> 6 Weeks,
+                            <span class="news-label">Time:</span> Afternoon,
+                            <span class="news-label">Platform:</span> Onsite,
+                            <span class="news-label">Location:</span> MAT Services BD classroom.
+                        </li>
+                        <li>
                             <span class="news-feed">Batch:</span>
                             <span class="news-label">Course Name:</span> Japanese N5,
-                            <span class="news-label">Start Date:</span> 2nd December 2024,
-                            <span class="news-label">Duration:</span> 6 Weeks,
-                            <span class="news-label">Time:</span> 2:00 PM,
-                            <span class="news-label">Platform:</span> Classroom,
-                            <span class="news-label">Location:</span> Chittagong.
-                        </div>
-                    </div>
+                            <span class="news-label">Start Date:</span> 17th December,
+                            <span class="news-label">Duration:</span> 180 hrs.,
+                            <span class="news-label">Time:</span> 7:00 PM to 10:00 PM,
+                            <span class="news-label">Platform:</span> Zoom,
+                            <span class="news-label">Location:</span> Online.
+                        </li>
+                    </ul>
                 </div>
             </section>
+
 
             <section class="affiliates-our-affiliates" id="affiliates-our-affiliates">
                 <div class="affiliates-scroller" data-speed="fast">
@@ -765,6 +777,18 @@
     <script src="./js/successStroy.js"></script>
     <script src="./js/affiliates.js"></script>
     <script src="./js/branch.js"></script>
+    <script>
+        const scroller = document.querySelector(".scroller");
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        // Clone each item and append it to the scroller
+        scrollerContent.forEach((item) => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute("aria-hidden", "true");
+            scrollerInner.appendChild(clone);
+        });
+    </script>
 </body>
 
 </html>
