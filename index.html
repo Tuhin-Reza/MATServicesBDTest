@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/resp.css">
     <link rel="stylesheet" href="./styles/newsFeed.css">
-
 </head>
 
 <body id="top">
@@ -90,15 +89,19 @@
                 </div>
                 </div>
             </section> -->
-            <section class="heropanel--video">
-                <img src="./images/hero_section/bg18.jpg" alt="Top 5 Japanese Universities" class="heropanel-image" />
-                <div class="video-overlay"></div>
+
+
+            <section class="heropanel--image">
+                <img src="./images/hero_section/bg20.jpg" alt="Japanese Language Academy" class="heropanel-image" />
+                <div class="image-overlay"></div>
                 <div class="heropanel__content">
                     <h1><a href="#header" rel="home"><span class="hero-title">MAT</span> <span class="s">S</span>ervices
                             <span class="bd">BD</span></a></h1>
-                    <p class="hero-dis">For Study & work in Japan</p>
+                    <p class="hero-dis">For Study & Work in Japan</p>
                 </div>
             </section>
+
+
 
             <section class="bold-point" id="bold-point">
                 <div class="bold-point-row">
@@ -777,6 +780,23 @@
     <script src="./js/successStroy.js"></script>
     <script src="./js/affiliates.js"></script>
     <script src="./js/branch.js"></script>
+
+    <script>
+        // Use Intersection Observer to trigger animation when the section comes into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); // Add visible class to trigger animation
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the section is visible
+        });
+
+        // Select all content sections to observe
+        const heropanelContents = document.querySelectorAll('.heropanel__content');
+        heropanelContents.forEach(content => observer.observe(content));
+    </script>
 </body>
 
 </html>
