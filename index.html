@@ -780,23 +780,6 @@
     <script src="./js/successStroy.js"></script>
     <script src="./js/affiliates.js"></script>
     <script src="./js/branch.js"></script>
-
-    <script>
-        // Use Intersection Observer to trigger animation when the section comes into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible'); // Add visible class to trigger animation
-                }
-            });
-        }, {
-            threshold: 0.5 // Trigger when 50% of the section is visible
-        });
-
-        // Select all content sections to observe
-        const heropanelContents = document.querySelectorAll('.heropanel__content');
-        heropanelContents.forEach(content => observer.observe(content));
-    </script>
 </body>
 
 </html>
