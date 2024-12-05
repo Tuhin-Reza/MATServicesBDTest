@@ -1,6 +1,7 @@
 .bold-point {
     box-sizing: border-box;
-    margin-top: -200px;
+    margin-top: -230px;
+    margin-bottom: 38px;
     overflow: hidden;
 }
 
@@ -8,7 +9,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    animation: gm-slidein 3s 1;
+    animation: gm-slide-right-to-left 3s 1;
 }
 
 
@@ -27,8 +28,8 @@
     font-size: 45px;
     cursor: pointer;
     margin: 20px;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
@@ -49,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #FF0000;
 }
 
@@ -91,21 +92,27 @@
 }
 
 /*  Animation */
-@keyframes gm-slidein {
+@keyframes gm-slide-right-to-left {
     from {
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(100%, 0, 0);
+        /* Move from right */
         opacity: 0;
     }
 
     to {
         transform: none;
+        /* Default position */
         opacity: 1;
     }
 }
 
 /* For small screens (mobile, 320px to 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
-    .bold-point-row {
+   
+    .bold-point {
+        margin-bottom: 48px;
+    }
+     .bold-point-row {
         flex-direction: row;
         align-items: center;
         margin: 0;
@@ -143,8 +150,11 @@
 
 /* For medium screens (tablets, 481px to 1024px) */
 @media (min-width: 481px) and (max-width: 1024px) {
+    .bold-point {
+        margin-top: -300px;
+        margin-bottom: 138px;
+    }
     .bold-point-row {
-        margin-top: 30px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -156,14 +166,13 @@
     }
 
     .hovicon {
-        width: 70px;
-        height: 70px;
-        font-size: 35px;
+        width: 100px;
+        height: 100px;
     }
 
     .hovicon i,
     .hovicon span {
-        font-size: 25px;
+        font-size: 55px;
     }
 
     .hovicon span {

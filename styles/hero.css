@@ -8,6 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/hero_section/bg20.jpg');
 }
 
 .heropanel-image {
@@ -26,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
@@ -36,10 +39,12 @@
     color: white;
     text-align: center;
     padding: 4em 0 2em;
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     animation: gm-slidein 3s 1;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 3px solid red;
+    overflow: hidden;
+    will-change: transform;
 }
 
 .hero-title {
@@ -49,7 +54,7 @@
 }
 
 .hero-dis {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-weight: bolder !important;
 }
 
@@ -77,7 +82,7 @@
 /* Animation */
 @keyframes gm-slidein {
     from {
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(-100vw, 0, 0);
         opacity: 0;
     }
 
@@ -89,9 +94,16 @@
 
 /* Responsive Design */
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .heropanel--image {
+        background-image: url('../images/hero_section/phoneBG1.jpg');
+        /* Mobile-specific image */
+    }
+
     .heropanel--image {
         height: 100vh;
     }
+
 
     .heropanel__content {
         max-width: 90%;
@@ -114,10 +126,22 @@
     }
 
     .heropanel__content h1 {
-        font-size: 2.5rem;
+        font-size: 5rem;
+        word-spacing: 10px;
+    }
+
+    .hero-title {
+        font-size: 8rem;
     }
 
     .heropanel__content p {
-        font-size: 1.4rem;
+        font-size: 3rem;
+    }
+
+    .heropanel--image {
+        background-image: url('../images/hero_section/tabletBG6.jpg');
+    }
+    .image-overlay {
+        background: rgba(0, 0, 0, 0.4);
     }
 }
