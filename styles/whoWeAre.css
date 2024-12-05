@@ -80,6 +80,8 @@
     margin-bottom: 2rem;
     text-align: justify;
     line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .profile-container {
@@ -119,7 +121,6 @@
 }
 
 .ceo-profile-name li.ceo-title {
-    /* font-family: Great Vibes; */
     font-size: 1.8rem;
     margin-top: 5px;
 }
@@ -376,5 +377,14 @@
 
     .appointment-call {
         border-right: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
     }
 }

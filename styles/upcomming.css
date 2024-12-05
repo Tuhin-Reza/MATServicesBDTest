@@ -14,7 +14,6 @@
     align-items: center;
 }
 
-/* https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80 */
 .upcoming-left,
 .upcoming-right {
     flex: 1;
@@ -73,32 +72,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 100px;
 
 }
 
 .location {
     border-right: none;
-    /* Remove right border */
     padding: 10px;
-    /* Keep padding for consistency */
     text-align: center;
-    /* Center the location text */
 }
 
 .upcoming-title {
     flex-direction: column;
-    /* Stack title lines vertically */
 }
 
 .date-time {
     flex-direction: column;
-    /* Stack date and time vertically */
 }
 
 .location {
     text-align: center;
-    /* Center the location text */
 }
 
 /* Adjustments for mobile responsiveness */
@@ -111,6 +104,7 @@
     .upcoming-left,
     .upcoming-right {
         margin: 20px 0;
+        width: 400px;
     }
 
     .upcoming-left-box,
@@ -121,7 +115,6 @@
     .upcomming-events-container,
     .upcomming-batches-container {
         flex-direction: column;
-        /* Stack items vertically on small screens */
     }
 
     .upcoming-title,
@@ -130,7 +123,16 @@
         border-right: none;
         padding-bottom: 10px;
         border-bottom: 2px solid red;
-        /* Use bottom border on mobile */
+    }
+
+    .upcoming-title {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .date-time {
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
@@ -144,6 +146,7 @@
     .upcoming-left,
     .upcoming-right {
         margin: 20px 0;
+        width: 700px;
     }
 
     .upcoming-left-box,
@@ -154,7 +157,6 @@
     .upcomming-events-container,
     .upcomming-batches-container {
         flex-direction: column;
-        /* Stack items vertically on tablets */
     }
 
     .upcoming-title,
@@ -163,6 +165,19 @@
         border-right: none;
         padding-bottom: 10px;
         border-bottom: 2px solid red;
-        /* Use bottom border on tablets */
+        margin: 0;
+
     }
+
+    .upcoming-title {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .date-time {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+
 }

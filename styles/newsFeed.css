@@ -5,7 +5,6 @@
     justify-content: flex-start;
     background-color: #c7edff;
     z-index: 10;
-    /* Higher than the background */
     position: relative;
 }
 

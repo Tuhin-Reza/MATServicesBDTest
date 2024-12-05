@@ -95,24 +95,23 @@
 @keyframes gm-slide-right-to-left {
     from {
         transform: translate3d(100%, 0, 0);
-        /* Move from right */
         opacity: 0;
     }
 
     to {
         transform: none;
-        /* Default position */
         opacity: 1;
     }
 }
 
 /* For small screens (mobile, 320px to 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
-   
+
     .bold-point {
         margin-bottom: 48px;
     }
-     .bold-point-row {
+
+    .bold-point-row {
         flex-direction: row;
         align-items: center;
         margin: 0;
@@ -154,6 +153,7 @@
         margin-top: -300px;
         margin-bottom: 138px;
     }
+
     .bold-point-row {
         flex-direction: row;
         flex-wrap: wrap;
