@@ -1,5 +1,5 @@
 .template_hero {
-    background-image: url("../images/bg10.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../images/hero_section/bg22.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -175,7 +175,7 @@
 /* For Media Query */
 @media (min-width: 320px) and (max-width: 480px) {
     .template_hero {
-        background-image: url("../images/about_usBG11.jpg");
+        background-image: url("../images/hero_section/phoneBG1.jpg");
     }
 
     .article-card {
@@ -226,6 +226,7 @@
 
 @media (min-width: 481px) and (max-width: 1024px) {
     .template_hero {
+        background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;
         background-position: center;
     }
