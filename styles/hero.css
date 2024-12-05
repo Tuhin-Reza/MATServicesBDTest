@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
@@ -97,13 +97,11 @@
 
     .heropanel--image {
         background-image: url('../images/hero_section/phoneBG1.jpg');
-        /* Mobile-specific image */
     }
 
     .heropanel--image {
         height: 100vh;
     }
-
 
     .heropanel__content {
         max-width: 90%;
@@ -116,6 +114,10 @@
 
     .heropanel__content p {
         font-size: 1.2rem;
+    }
+
+    .image-overlay {
+        background: rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -141,6 +143,7 @@
     .heropanel--image {
         background-image: url('../images/hero_section/tabletBG6.jpg');
     }
+
     .image-overlay {
         background: rgba(0, 0, 0, 0.4);
     }
