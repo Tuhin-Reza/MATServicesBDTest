@@ -1,5 +1,5 @@
 .languageCourse_hero {
-    background-image: url("../images/bg10.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../images/hero_section/bg19.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -130,7 +130,6 @@
     background: #2C2760;
     padding-top: 36px;
     border-radius: 15px;
-
     font-family: Georgia, serif;
 }
 
@@ -183,7 +182,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-family: Georgia, serif;
 }
 
@@ -199,7 +197,8 @@
 /* Features Section */
 .course_card .course_features {
     margin-top: 0;
-    padding-left: 80px;
+    padding-left: 50px;
+    padding-bottom: 30px;
     font-size: 14px;
     color: #2C2760;
 }
@@ -221,7 +220,7 @@
     margin-bottom: 8px;
 }
 
-.course_features li i{
+.course_features li i {
     color: #FF0000;
     padding-right: 8px;
 }
@@ -249,10 +248,14 @@
 }
 
 #chapter-list {
-    list-style: none;
+
     line-height: 30px;
     padding-left: 0;
     font-size: 1.8rem;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 20px;
+
 }
 
 .course_popup-overlay.active {
@@ -270,7 +273,7 @@
 /* For sMedia Query*/
 @media (min-width: 320px) and (max-width: 480px) {
     .languageCourse_hero {
-        background-image: url("../images/about_usBG11.jpg");
+        background-image: url("../images/hero_section/phoneBG1.jpg");
     }
 
     .language-reasons {
@@ -387,6 +390,7 @@
 
 @media (min-width: 481px) and (max-width: 1024px) {
     .languageCourse_hero {
+        background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;
         background-position: center;
     }
