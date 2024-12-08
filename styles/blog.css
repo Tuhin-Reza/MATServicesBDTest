@@ -173,7 +173,7 @@
 }
 
 /* For Media Query */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 667px) {
     .template_hero {
         background-image: url("../images/hero_section/phoneBG1.jpg");
     }
@@ -182,6 +182,7 @@
         flex-direction: column;
         margin: 0 10px;
         margin-bottom: 30px;
+        border-radius: 0;
     }
 
     .article-date {
@@ -194,6 +195,7 @@
 
     .article-overlay .article-details-btn {
         display: none;
+        border-radius: 0;
     }
 
     .article-details-popup {
@@ -216,6 +218,7 @@
         justify-content: space-around;
         width: auto;
         padding: 10px 0;
+        margin-top: 15px;
     }
 
     .article-close-btn {
