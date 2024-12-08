@@ -358,7 +358,7 @@
         flex-direction: column;
         width: 100%;
         height: 120vh;
-        background-color: #c7edff;
+        background-color: #ff0000;
         background-position: center top;
         padding: 0;
     }
@@ -370,17 +370,27 @@
 
     .nav__wrapper__list__item a {
         width: 100%;
+        height: 100%;
         font-size: 2.5rem;
         padding: 20px;
-        color: #000;
+        color: #fff;
         text-align: center;
         text-decoration: none;
+
+        margin-left: 10px;
         margin-bottom: 10px;
         padding-bottom: 20px;
-        border-right: none;
-        border: none;
-        padding-left: 50px;
-        
+        padding-left: 30px;
+
+        /* Ensure uniform border width */
+        border-bottom: 2px solid #ffffff;
+        /* Flexbox centering */
+        display: flex;
+        /* Use flexbox to center text */
+        justify-content: center;
+        /* Horizontally center the text */
+        align-items: center;
+        /* Vertically center the text */
     }
 }
 
