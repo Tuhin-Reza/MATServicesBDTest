@@ -312,7 +312,7 @@
 
 /* Media qurey section related to Navbar Section */
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 320px) and (max-width: 667px) {
     * {
         margin: 0;
         padding: 0;

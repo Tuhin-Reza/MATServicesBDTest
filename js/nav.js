@@ -26,7 +26,7 @@ $('.nav__wrapper__list__item a,.nav__logo a').click(function () {
 
 function updateLogo() {
     const logo = document.querySelector('.nav__logo a');
-    if (window.innerWidth >= 375 && window.innerWidth <= 667) {
+    if (window.innerWidth >= 320 && window.innerWidth <= 1024) {
         logo.textContent = 'MAT JLA';
     } else {
         logo.textContent = 'MAT Japanese Language Academy';
