@@ -2,7 +2,7 @@ $('.nav__toggle-btn').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu button");
     $("#mainListDiv").toggleClass("nav__wrapper--visible");
-    $("#mainListDiv").fadeIn();
+    $("#mainListDiv").fadeIn(500);
 
 });
 
@@ -17,7 +17,6 @@ $(window).scroll(function() {
             }
 });
         
-// Close the navbar when a link is clicked
 $('.nav__wrapper__list__item a,.nav__logo a').click(function () {
     if ($('.nav__toggle-btn').hasClass('active')) {
         $('.nav__toggle-btn').removeClass('active'); 
@@ -27,10 +26,10 @@ $('.nav__wrapper__list__item a,.nav__logo a').click(function () {
 
 function updateLogo() {
     const logo = document.querySelector('.nav__logo a');
-    if (window.innerWidth >= 320 && window.innerWidth <= 450) {
-        logo.textContent = 'MAT JLA'; // Change to "MAT JLA" for small screens
+    if (window.innerWidth >= 375 && window.innerWidth <= 667) {
+        logo.textContent = 'MAT JLA';
     } else {
-        logo.textContent = 'MAT Japanese Language Academy'; // Revert to original for larger screens
+        logo.textContent = 'MAT Japanese Language Academy';
     }
 }
 

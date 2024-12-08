@@ -25,14 +25,13 @@
     border-radius: 5px;
 }
 
-/* For small devices */
+
 @media (min-width: 320px) and (max-width: 480px) {
     .about_hero {
         background-image: url("../images/hero_section/phoneBG1.jpg");
     }
 }
 
-/* For tablets */
 @media (min-width: 481px) and (max-width: 1024px) {
     .about_hero {
         background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
