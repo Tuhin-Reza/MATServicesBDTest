@@ -113,9 +113,9 @@
 }
 
 /* For small devices */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 667px) {
     .workinJapan_hero {
-        background-image: url("../images/hero_section/phoneBG1.jpg");
+        background-image: url("../images/hero_section/workJapanPhone.jpg");
     }
 
     .jobPost {
@@ -125,7 +125,7 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
     .workinJapan_hero {
         background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;

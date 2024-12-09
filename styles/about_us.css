@@ -298,12 +298,21 @@ a {
 }
 
 /* For small devices */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 667px) {
     .about_hero {
-        background-image: url("../images/hero_section/phoneBG1.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        background-image: url("../images/hero_section/aboutusPhone.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;
         background-position: center;
         width: 100%;
+    }
+
+    .team-section h2 {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .team-section h3 {
+        padding-top: 30px;
     }
 
     .team-member {
@@ -319,9 +328,17 @@ a {
         width: 90%;
         height: auto;
     }
+
+    .popup-close {
+        border-radius: 2px;
+        font-family: Georgia, serif;
+        font-size: 1rem;
+        height: 8%;
+        width: 10%;
+    }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
     .about_hero {
         background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;

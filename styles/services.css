@@ -162,9 +162,9 @@
 }
 
 /* Media Query */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 667px) {
     .services_hero {
-        background-image: url("../images/hero_section/phoneBG1.jpg");
+        background-image: url("../images/hero_section/servicesPhone.jpg");
     }
 
     .services {
@@ -204,27 +204,46 @@
     }
 
     .service-details h3 {
+        padding-bottom: 10px;
         font-size: 2rem;
     }
 
     .service-details p {
         font-size: 1.8rem;
+        padding-bottom: 10px;
+        line-height: 25px;
     }
 
     .custom-list {
         font-size: 1.5rem;
     }
 
-    .custom-list li {
-        margin-bottom: 5px;
+    .custom-list p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-bottom: 2px solid #FF0000;
     }
+
+    .custom-list li {
+        margin-top: -5px;
+        margin-left: -12px;
+    }
+
+    .custom-list li:before {
+        margin-top: 3px;
+        width: 18px;
+        height: 18px;
+    }
+
 
     .service-link-btn {
         padding: 15px 1.5rem;
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
     .services_hero {
         background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;

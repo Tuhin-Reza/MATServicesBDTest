@@ -271,13 +271,26 @@
 }
 
 /* For sMedia Query*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 667px) {
     .languageCourse_hero {
-        background-image: url("../images/hero_section/phoneBG1.jpg");
+        background-image: url("../images/hero_section/languageCoursePhone.jpg");
+    }
+
+    .language-required h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .language-reasons {
         grid-template-columns: 1fr;
+    }
+
+    .reason h3 {
+        margin-bottom: 2.5rem;
+    }
+
+    .reason p {
+        font-size: 2rem;
     }
 
     .why-language-required {
@@ -287,6 +300,11 @@
     .language-required {
         margin: 0 auto;
         padding: 20px;
+    }
+
+    .course-heading h2 {
+        margin-top: 30px;
+        margin-bottom: -70px;
     }
 
     .course_card {
@@ -381,14 +399,30 @@
     .course_popup-content {
         margin: 20px;
         background: #FFFFFF;
-        padding: 20px;
+        padding: 0;
+        padding-top: 30px;
+        padding-left: -10px;
         width: 100%;
         border-radius: 10px;
         text-align: center;
+        border: 1px solid red;
+    }
+
+    .course_popup-content h3 {
+        margin-bottom: 3rem;
+    }
+
+    .course_card .course_features li {
+        padding-bottom: 5px;
+        line-height: 22px;
+    }
+
+    .course_content_close_btn {
+        margin-bottom: 20px;
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 667px) and (max-width: 1024px) {
     .languageCourse_hero {
         background-image: url("../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         background-size: cover;
@@ -476,16 +510,13 @@
     .course_popup-overlay {
         display: none;
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         background: rgba(0, 0, 0, 0.5);
         align-items: center;
         justify-content: center;
     }
 
     .course_popup-content {
+        border: 1px solid red;
         margin: 50px;
         background: #FFFFFF;
         padding: 20px;
