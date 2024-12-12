@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            font-weight: 300;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin: 50px auto;
+        }
+
+        .card {
+            width: 350px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            overflow: hidden;
+            box-shadow: 0 0px 0px 4px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.4s ease, transform 0.4s ease;
+            position: relative;
+        }
+
+        .card:hover,
+        .card.active {
+            box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .card.active {
+            width: 300px;
+            height: 600px;
+        }
+
+        .filler {
+            position: absolute;
+            right: -100%;
+            top: -100%;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-color: #222222;
+            transition: top 0.3s ease, right 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .filler.active {
+            right: 0;
+            top: 0;
+            border-radius: 0;
+        }
+
+        .filler div {
+            opacity: 0;
+        }
+
+        .filler.active div {
+            opacity: 1;
+            transition: opacity 1.5s ease;
+        }
+
+        .f-title {
+            width: 100%;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .f-subtitle {
+            text-align: center;
+            color: #cccccc;
+            width: 80%;
+            margin-left: 10%;
+            border-bottom: solid 1px white;
+            padding-bottom: 20px;
+        }
+
+        .episode {
+            width: 100%;
+            color: #eeeeee;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .episode .e-title {
+            margin: 15px 10%;
+        }
+
+        .episode:nth-child(2n) {
+            background-color: #292929;
+        }
+
+        .episode:hover {
+            background-color: #333333;
+        }
+
+        .top-half {
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center top;
+            /* Horizontally centered, vertically aligned to top */
+            background-repeat: no-repeat;
+        }
+
+        .bottom-half {
+            margin-left: 5%;
+            margin-top: 12px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .bottom-half .title {
+            font-size: 22px;
+            color: #555555;
+            margin-bottom: 2px;
+        }
+
+        .bottom-half .subtitle {
+            font-size: 12px;
+            color: #999999;
+        }
+
+        /* Row layout for the cards */
+        .row {
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+        }
+
+        .card-wrapper {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- N5 Card -->
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="top-half" style="background-image: url('./images/course/output\ \(58\).jpg');"></div>
+                    <div class="bottom-half">
+                        <div class="title">Japanese Language N5</div>
+                        <div class="subtitle">Beginner Level</div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#courseDegine">
+                            Course Module
+                        </button>
+                    </div>
+                    <div class="filler">
+                        <div class="f-title">Japanese Language N5</div>
+                        <div class="f-subtitle">Beginner Level</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- N4 Card -->
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="top-half" style="background-image: url('./images/course/N4.jpg');"></div>
+                    <div class="bottom-half">
+                        <div class="title">Japanese Language N4</div>
+                        <div class="subtitle">Elementary Level</div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#courseDegine">
+                            Course Module
+                        </button>
+                    </div>
+                    <div class="filler">
+                        <div class="f-title">Japanese Language N4</div>
+                        <div class="f-subtitle">Elementary Level</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- N3 Card -->
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="top-half" style="background-image: url('./images/course/output\ \(60\).jpg');"></div>
+                    <div class="bottom-half">
+                        <div class="title">Japanese Language N3</div>
+                        <div class="subtitle">Intermediate Level</div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#courseDegine">
+                            Course Module
+                        </button>
+                    </div>
+                    <div class="filler">
+                        <div class="f-title">Japanese Language N3</div>
+                        <div class="f-subtitle">Intermediate Level</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="courseDegine" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Course Module</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Course design details will be displayed here.
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chapter">
+                    All Chapter
+                </button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="chapter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Course Module</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Course design details will be displayed here.
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chapter">
+                    All Chapter
+                </button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.card').click(function (e) {
+                if ($(e.target).closest('.top-half, .bottom-half').length) {
+                    return;
+                }
+                $(this).toggleClass('active');
+                $(this).find('.filler').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
