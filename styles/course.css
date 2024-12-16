@@ -1,0 +1,248 @@
+.course-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: -80px;
+
+
+    font-family: Georgia, serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.course-card {
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.course-card:hover,
+.course-card.active {
+    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.course-card.active {
+    width: 300px;
+    height: 600px;
+}
+
+.top-half {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.bottom-half {
+    margin-left: 5%;
+    margin-top: 18px;
+    width: 90%;
+    text-align: center;
+}
+
+.bottom-half .title {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.bottom-half .subtitle {
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.course-module {
+    text-decoration: none;
+    border: none;
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.course-module:hover {
+    color: #ffffff;
+    border: none;
+}
+
+
+/* Row layout for the cards */
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.course-card-wrapper {
+    width: 300px;
+}
+
+.model {
+    border: 1px solid red;
+}
+
+/*...............................Course Module..................................... */
+.modal-custom-width {
+    max-width: 70%;
+    background-color: #ffffff;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0;
+}
+
+.n {
+    font-size: 2rem;
+    color: red;
+    padding-left: 2rem;
+    padding-right: 10px;
+}
+
+.course-overview {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 12px;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem
+}
+
+.course-section {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.course-section i {
+    color: #ffffff;
+    font-weight: normal;
+    background-color: #ff0000;
+    font-size: 13px;
+    padding: 3px;
+    margin-right: 8px;
+}
+
+.course-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.course-section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.course-section ul li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.course-section ul li strong {
+    font-weight: normal;
+    color: #000000;
+}
+
+.sub-list li {
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.overview-details {
+    padding-left: 5px;
+}
+
+
+.certification-note {
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #E8F5E9;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #1E3C2D;
+    margin-right: 20px;
+}
+
+.custom-btn {
+    margin-right: 45px;
+    background-color: #ff0000;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+
+.custom-btn:hover .custom-icon {
+    color: #f8f9fa;
+}
+
+
+.bottom-viewLission {
+    opacity: 1 !important;
+    border: none;
+    background-color: #ff0000;
+    color: #000000;
+    margin-right: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.bottom-viewLission:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+
+/* *****************************Lesson*********************** */
+.lesson-box {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.lesson-box h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}

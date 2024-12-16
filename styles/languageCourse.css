@@ -104,13 +104,21 @@
     text-align: center;
 }
 
-.course-heading h2 {
-    font-size: 5rem;
+.course-heading button {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
 }
 
-.details {
-    color: #FF0000;
+.course-heading button:hover {
+    color: #000000;
 }
+
 
 /* Card Styles */
 .course_card {
@@ -302,7 +310,7 @@
         padding: 20px;
     }
 
-    .course-heading h2 {
+    .course-heading button {
         margin-top: 30px;
         margin-bottom: -70px;
     }
