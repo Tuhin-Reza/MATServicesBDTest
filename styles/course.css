@@ -170,7 +170,18 @@
 
 .sub-list li {
     font-size: 1rem;
+    padding: 0;
     padding-left: 2rem;
+}
+.course-section ul li{
+    margin: 0;
+    padding: 0;
+    margin-bottom: -10px;
+}
+.course-section ul li ul li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -10px;
 }
 
 .overview-details {
