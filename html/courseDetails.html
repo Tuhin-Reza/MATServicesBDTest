@@ -4,1052 +4,1641 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!-- Add Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Course Details</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
 
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' />
+    <link rel="stylesheet" href="../styles/courseDetailsNav.css">
     <link rel="stylesheet" href="../styles/course.css">
     <link rel="stylesheet" href="../styles/responsive/courseResp.css">
-
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/landingPage.css">
 </head>
 
 <body>
-    <section class="course-description-section">
-        <div class="course-container">
-            <div class="row">
-                <!-- N5 Card -->
-                <div class="course-card-wrapper">
-                    <div class="course-card">
-                        <div class="top-half" style="background-image: url('../images/course/output\ \(58\).jpg');">
-                        </div>
-                        <div class="bottom-half">
-                            <div class="title">Japanese Language N5</div>
-                            <div class="subtitle">Basic Japaneses</div>
-                            <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN5"
-                                role="button">Course
-                                Overview</a>
-                        </div>
-                    </div>
-                </div>
+    <header class="custom-header">
+        <nav class="custom-nav custom-overlay">
+            <div class="custom-nav__logo">
+                <a href="../index.html">MAT Japanese Language Academy</a>
+            </div>
+            <div id="custom-mainListDiv" class="custom-main_list custom-nav__wrapper">
+                <ul class="custom-navlinks custom-nav__wrapper__list">
+                    <li class="custom-nav__wrapper__list__item "><a href="./about_us.html">About Us</a></li>
+                    <li class="custom-nav__wrapper__list__item "><a href="./blog.html">Blog</a></li>
+                    <li class="custom-nav__wrapper__list__item "><a href="./services.html">Services</a></li>
+                    <li class="custom-nav__wrapper__list__item "><a href="./contact.html">Contact Us</a></li>
+                    <li class="custom-nav__wrapper__list__item custom-signin"><a href="./signin.html">Signin</a></li>
+                </ul>
+            </div>
+            <span class="custom-navTrigger custom-nav__toggle-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </nav>
+    </header>
 
-                <!-- N4 Card -->
-                <div class="course-card-wrapper">
-                    <div class="course-card">
-                        <div class="top-half" style="background-image: url('../images/course/N4.jpg');"></div>
-                        <div class="bottom-half">
-                            <div class="title">Japanese Language N4</div>
-                            <div class="subtitle">Advance Beginner </div>
-                            <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN4"
-                                role="button">Course
-                                Overview</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- N3 Card -->
-                <div class="course-card-wrapper">
-                    <div class="course-card">
-                        <div class="top-half" style="background-image: url('../images/course/N3.jpg');">
-                        </div>
-                        <div class="bottom-half">
-                            <div class="title">Japanese Language N3</div>
-                            <div class="subtitle">Converseosional </div>
-                            <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN3"
-                                role="button">Course
-                                Overview</a>
-
+    <main>
+        <section class="template_hero">
+            <h1 class="template_hero-title"><span class="lanHide">Language </span>Courses</h1>
+        </section>
+        <section class="course-description-section">
+            <h2 class="courses-heading">Courses</h2>
+            <div class="course-container">
+                <div class="course-card-row">
+                    <!-- N5 Card -->
+                    <div class="course-card-wrapper">
+                        <div class="course-card">
+                            <div class="top-half" style="background-image: url('../images/course/output\ \(58\).jpg');">
+                            </div>
+                            <div class="bottom-half">
+                                <div class="course-card-title">Japanese Language N5</div>
+                                <div class="subtitle">Basic Japaneses</div>
+                                <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN5"
+                                    role="button">Course
+                                    Overview</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- N5 Modal -->
-        <div class="modal fade" id="courseModalToggleN5" aria-hidden="true" aria-labelledby="courseModalToggleLabelN5"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered ">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN5"><span class="n">N5</span>Course Overview
-                        </h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
+                    <!-- N4 Card -->
+                    <div class="course-card-wrapper">
+                        <div class="course-card">
+                            <div class="top-half" style="background-image: url('../images/course/N4.jpg');"></div>
+                            <div class="bottom-half">
+                                <div class="course-card-title">Japanese Language N4</div>
+                                <div class="subtitle">Advance Beginner </div>
+                                <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN4"
+                                    role="button">Course
+                                    Overview</a>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <section class="course-overview">
-                            <div class="course-section">
-                                <h2>📅 Course Overview</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Session Duration:</span>
-                                            <span class="overview-details">3 hours per session</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weekly Sessions:</span>
-                                            <span class="overview-details">3 sessions per week</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Weekly Course Hours:</span>
-                                            <span class="overview-details">9 hours (3 sessions x 3 hours each)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Course Hours:</span>
-                                            <span class="overview-details">160 hours</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weeks:</span>
-                                            <span class="overview-details">18 weeks</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Duration:</span>
-                                            <span class="overview-details">4 months 5 days</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
 
-                            <div class="course-section">
-                                <h2>📚 Learning Focus and Tools</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Kanji Focus:</span>
-                                            <span class="overview-details">Basic kanji (approximately 110
-                                                characters)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Learning Tools:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">RolePlay:</span>
-                                                    <span class="overview-details">Practice your language learning
-                                                        milestones through interactive role-playing scenarios.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Multimedia:</span>
-                                                    <span class="overview-details">Visual content (videos, interactive
-                                                        slides) to reinforce lessons.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Audio Lessons:</span>
-                                                    <span class="overview-details">Audio materials for improving
-                                                        listening comprehension.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Apps:</span>
-                                                    <span class="overview-details">Interactive language practice apps to
-                                                        enhance learning.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                    <!-- N3 Card -->
+                    <div class="course-card-wrapper">
+                        <div class="course-card">
+                            <div class="top-half" style="background-image: url('../images/course/N3.jpg');">
+                            </div>
+                            <div class="bottom-half">
+                                <div class="course-card-title">Japanese Language N3</div>
+                                <div class="subtitle">Converseosional </div>
+                                <a class="course-module" data-bs-toggle="modal" href="#courseModalToggleN3"
+                                    role="button">Course
+                                    Overview</a>
 
                             </div>
-
-                            <div class="course-section">
-                                <h2>📝 Assessment Structure</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Tests:</span>
-                                            <span class="overview-details">25 (short, regular assessments)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Main Tests:</span>
-                                            <span class="overview-details">5 (comprehensive evaluations)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Reviews:</span>
-                                            <span class="overview-details">2 (progress reviews, feedback, and
-                                                clarification)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Mock (MOC) Tests:</span>
-                                            <span class="overview-details">3 (practice tests simulating the final
-                                                exam)</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="course-section">
-                                <h2>📘 Book Used</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Book Title:</span>
-                                            <span class="overview-details">Minna no Nihongo 1</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                            <!-- Certification Details Section -->
-                            <div class="course-section">
-                                <h2>🎓 Certification Details</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Level:</span>
-                                            <span class="overview-details">Basic Japaneses (N5)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Title:</span>
-                                            <span class="overview-details">Basic Japaneses (N5) (Based on Minna no
-                                                Nihongo 1)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Objective:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Basic Grammar:</span>
-                                                    <span class="overview-details">Understanding fundamental sentence
-                                                        structures.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Vocabulary:</span>
-                                                    <span class="overview-details">Building a core set of everyday words
-                                                        and phrases.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Kanji:</span>
-                                                    <span class="overview-details">Recognition and understanding of
-                                                        approximately 110 basic characters.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Listening:</span>
-                                                    <span class="overview-details">Build up listening comprehension and
-                                                        basic conversation skills.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Speaking:</span>
-                                                    <span class="overview-details">Build up basic conversation
-                                                        skills.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <p class="certification-note">Upon successful completion of the course, participants
-                                    will be awarded a Beginner (N5) certification in Japanese.</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN52" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">View All Chapter</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal fade" id="courseModalToggleN52" aria-hidden="true" aria-labelledby="courseModalToggleLabelN52"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN52">All Lesson: Minna no
-                            Nihongo 1 </h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section>
-                            <div class="lesson-box">
-                                <h3>Lesson 1: はじめまして (Hajimemashite) - Greetings and Introductions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 2: これは 何ですか (Kore wa nan desu ka) - Asking about things</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 3: どこですか (Doko desu ka) - Asking about places</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 4: いくつ (Ikutsu) - Asking about quantity and numbers</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 5: これは いくらですか (Kore wa ikura desu ka) - Asking about prices</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 6: なんじですか (Nanji desu ka) - Asking and telling time</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 7: あの人は 誰ですか (Ano hito wa dare desu ka) - Asking about people</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 8: ～の うち (Uchi) - Talking about family and homes</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 9: この店は 何時までですか (Kono mise wa nanji made desu ka) - Talking about stores and
-                                    business
-                                    hours</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 10: 食べます (Tabemasu) - Verbs related to eating, drinking, and actions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 11: ～へ 行きます (He ikimasu) - Talking about going to places</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 12: どうして ですか (Doushite desu ka) - Asking about reasons</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 13: ～ませんか (Masen ka) - Invitations and suggestions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 14: ～ましょう (Mashou) - Proposals and offers</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 15: ～から (Kara) - Giving reasons</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 16: どうですか (Dou desu ka) - Asking for opinions and impressions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 17: ～の ために (No tame ni) - Purpose and intention</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 18: ～て ください (Te kudasai) - Requests</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 19: どんな (Donna) - Asking about types and kinds</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 20: ～があります (Ga arimasu) - Talking about existence and things</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 21: ～います (Imasu) - Talking about existence of people and animals</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 22: どの (Dono) - Asking about specific things</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 23: ～が あります (Ga arimasu) - More about existence and locations</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 24: ～の 前に (No mae ni) - Talking about time and sequence</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 25: ～の 後で (No ato de) - Talking about after actions</h3>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN5" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">Course Overview</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- N5 Modal -->
+            <div class="modal fade" id="courseModalToggleN5" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN5" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="courseModalToggleLabelN5"><span class="n">N5</span>Course
+                                Overview
+                            </h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="course-overview">
+                                <div class="course-section">
+                                    <h2>📅 Course Overview</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
 
-        <!-- N4 Modal -->
-        <div class="modal fade" id="courseModalToggleN4" aria-hidden="true" aria-labelledby="courseModalToggleLabelN4"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN4"><span class="n">N4</span>Course Overview
-                        </h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="course-overview">
-                            <div class="course-section">
-                                <h2>📅 Course Overview</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Session Duration:</span>
-                                            <span class="overview-details">3 hours per session</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weekly Sessions:</span>
-                                            <span class="overview-details">3 sessions per week</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Weekly Course Hours:</span>
-                                            <span class="overview-details">9 hours (3 sessions x 3 hours each)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Course Hours:</span>
-                                            <span class="overview-details">160 hours</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weeks:</span>
-                                            <span class="overview-details">18 weeks</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Duration:</span>
-                                            <span class="overview-details">4 months 5 days</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
+                                                <span class="overview-title">Session Duration:</span>
+                                                <span class="overview-details">3 hours per session</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weekly Sessions:</span>
+                                                <span class="overview-details">3 sessions per week</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Weekly Course Hours:</span>
+                                                <span class="overview-details">9 hours (3 sessions x 3 hours
+                                                    each)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Course Hours:</span>
+                                                <span class="overview-details">160 hours</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weeks:</span>
+                                                <span class="overview-details">18 weeks</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Duration:</span>
+                                                <span class="overview-details">4 months 5 days</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <div class="course-section">
-                                <h2>📚 Learning Focus and Tools</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Kanji Focus:</span>
-                                            <span class="overview-details">kanji (approximately 320
-                                                characters)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Learning Tools:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">RolePlay:</span>
-                                                    <span class="overview-details">Practice your language learning
-                                                        milestones through interactive role-playing scenarios.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Multimedia:</span>
-                                                    <span class="overview-details">Visual content (videos, interactive
-                                                        slides) to reinforce lessons.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Audio Lessons:</span>
-                                                    <span class="overview-details">Audio materials for improving
-                                                        listening comprehension.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Apps:</span>
-                                                    <span class="overview-details">Interactive learning tools and
-                                                        language practice apps to enhance learning.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="course-section">
+                                    <h2>📚 Learning Focus and Tools</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Kanji Focus:</span>
+                                                <span class="overview-details">Basic kanji (approximately 110
+                                                    characters)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span><span class="overview-title">Learning Tools:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">RolePlay:</span>
+                                                        <span class="overview-details">Practice your language learning
+                                                            milestones through interactive role-playing
+                                                            scenarios.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Multimedia:</span>
+                                                        <span class="overview-details">Visual content (videos,
+                                                            interactive
+                                                            slides) to reinforce lessons.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Audio Lessons:</span>
+                                                        <span class="overview-details">Audio materials for improving
+                                                            listening comprehension.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Apps:</span>
+                                                        <span class="overview-details">Interactive language practice
+                                                            apps to
+                                                            enhance learning.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
-                            <div class="course-section">
-                                <h2>📝 Assessment Structure</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Tests:</span>
-                                            <span class="overview-details">25 (short, regular assessments to track
-                                                progress and reinforce learning)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Main Tests:</span>
-                                            <span class="overview-details">5 (comprehensive evaluations to assess the
-                                                understanding of the course material)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Reviews:</span>
-                                            <span class="overview-details">2 (sessions to review progress, clarify
-                                                doubts, and provide feedback)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Mock (MOC) Tests:</span>
-                                            <span class="overview-details">3 (practice tests simulating the final
-                                                examination)</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
+                                </div>
 
-                            <div class="course-section">
-                                <h2>📘 Book Used</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Book Title:</span>
-                                            <span class="overview-details">Minna no Nihongo 2</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="course-section">
+                                    <h2>📝 Assessment Structure</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Tests:</span>
+                                                <span class="overview-details">25 (short, regular assessments)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Main Tests:</span>
+                                                <span class="overview-details">5 (comprehensive evaluations)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Reviews:</span>
+                                                <span class="overview-details">2 (progress reviews, feedback, and
+                                                    clarification)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Mock (MOC) Tests:</span>
+                                                <span class="overview-details">3 (practice tests simulating the final
+                                                    exam)</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <!-- Certification Details Section -->
-                            <div class="course-section">
-                                <h2>🎓 Certification Details</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Level:</span>
-                                            <span class="overview-details">Advance Beginner (N4)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Title:</span>
-                                            <span class="overview-details">Advance Beginner Japanese Language Course
-                                                (Based on Minna no
-                                                Nihongo 2)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Objective:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Basic Grammar:</span>
-                                                    <span class="overview-details">Understanding fundamental sentence
-                                                        structures.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Vocabulary:</span>
-                                                    <span class="overview-details">Building a core set of everyday words
-                                                        and phrases.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Kanji:</span>
-                                                    <span class="overview-details">Recognition and understanding of
-                                                        approximately 250 basic characters.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Listening:</span>
-                                                    <span class="overview-details">Enhancing listening comprehension and
-                                                        basic conversation skills.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Speaking:</span>
-                                                    <span class="overview-details">Enhancing basic conversation
-                                                        skills.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <p class="certification-note">Upon successful completion of the course, participants
-                                    will be awarded a Advance Beginner (N4) certification in Japanese.</p>
-                            </div>
-                        </section>
+                                <div class="course-section">
+                                    <h2>📘 Book Used</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Book Title:</span>
+                                                <span class="overview-details">Minna no Nihongo 1</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN42" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">View All Chapter</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                <!-- Certification Details Section -->
+                                <div class="course-section">
+                                    <h2>🎓 Certification Details</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Certification Level:</span>
+                                                <span class="overview-details">Basic Japaneses (N5)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Title:</span>
+                                                <span class="overview-details">Basic Japaneses (N5) (Based on Minna no
+                                                    Nihongo 1)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="overview-title">Certification Objective:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></i></span>
+                                                        <span class="overview-title">Basic Grammar:</span>
+                                                        <span class="overview-details">Understanding fundamental
+                                                            sentence
+                                                            structures.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Vocabulary:</span>
+                                                        <span class="overview-details">Building a core set of everyday
+                                                            words
+                                                            and phrases.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Kanji:</span>
+                                                        <span class="overview-details">Recognition and understanding of
+                                                            approximately 110 basic characters.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Listening:</span>
+                                                        <span class="overview-details">Build up listening comprehension
+                                                            and
+                                                            basic conversation skills.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Speaking:</span>
+                                                        <span class="overview-details">Build up basic conversation
+                                                            skills.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
-        <div class="modal fade" id="courseModalToggleN42" aria-hidden="true" aria-labelledby="courseModalToggleLabelN42"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN42">All Lesson: Minna no Nihongo 2 :
-                        </h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section>
-                            <div class="lesson-box">
-                                <h3>Lesson 1: もうすぐ です (Mou sugu desu) - Talking about time and schedules</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 2: まだ です (Mada desu) - Expressing ongoing or future actions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 3: たくさん (Takusan) - Talking about quantity and frequency</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 4: ～ている (Te iru) - Describing actions in progress</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 5: ～とおもう (To omou) - Expressing thoughts and opinions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 6: ～てみる (Te miru) - Trying something</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 7: ～ながら (Nagara) - Doing two actions at the same time</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 8: ～ほうがいい (Hou ga ii) - Giving advice</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 9: こんど (Kondo) - Talking about future plans</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 10: いっしょに (Issho ni) - Doing things together</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 11: そのとき (Sono toki) - Talking about time and sequences</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 12: どこへも (Doko e mo) - Expressing locations and movement</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 13: ～ましょうか (Mashou ka) - Offering help or suggestions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 14: ～たことがある (Ta koto ga aru) - Talking about past experiences</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 15: ～のが好き (No ga suki) - Expressing likes and dislikes</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 16: ～が好きではない (Ga suki de wa nai) - Talking about dislikes</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 17: ～に行く (Ni iku) - Going to a place for a purpose</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 18: ～にきた (Ni kita) - Talking about actions taken or coming</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 19: ～をあげる (Wo ageru) - Giving and receiving actions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 20: ～ができる (Ga dekiru) - Ability to do something</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 21: ～がほしい (Ga hoshii) - Expressing desire for something</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 22: ～をしたい (Wo shitai) - Wanting to do something</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 23: ～へ行きたい (E ikitai) - Wanting to go somewhere</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 24: ～し、～し (Shi, shi) - Listing multiple reasons or actions</h3>
-                            </div>
-                            <div class="lesson-box">
-                                <h3>Lesson 25: ～てもいい (Temo ii) - Giving permission or asking for permission</h3>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN4" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">Course Overview</button>
+                                    <p class="certification-note">Upon successful completion of the course, participants
+                                        will be awarded a Beginner (N5) certification in Japanese.</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN52"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">View All Chapter</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- N3 Modal -->
-        <div class="modal fade" id="courseModalToggleN3" aria-hidden="true" aria-labelledby="courseModalToggleLabelN3"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN3"><span class="n">N3</span>Course Overview
-                        </h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="course-overview">
-                            <div class="course-section">
-                                <h2>📅 Course Overview</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Session Duration:</span>
-                                            <span class="overview-details">3 hours per session</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weekly Sessions:</span>
-                                            <span class="overview-details">3 sessions per week</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Weekly Course Hours:</span>
-                                            <span class="overview-details">9 hours (3 sessions x 3 hours each)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Course Hours:</span>
-                                            <span class="overview-details">180 hours</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Total Weeks:</span>
-                                            <span class="overview-details">20 weeks</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Duration:</span>
-                                            <span class="overview-details">5 months</span>
-                                        </p>
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <div class="course-section">
-                                <h2>📚 Learning Focus and Tools</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Kanji Focus:</span>
-                                            <span class="overview-details">Kanji (approximately 650 characters)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Learning Tools:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">RolePlay:</span>
-                                                    <span class="overview-details">Practice your language learning
-                                                        milestones through interactive role-playing scenarios.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Multimedia:</span>
-                                                    <span class="overview-details">Visual content (videos, interactive
-                                                        slides) to reinforce lessons.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Audio Lessons:</span>
-                                                    <span class="overview-details">Audio materials for improving
-                                                        listening comprehension.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Apps:</span>
-                                                    <span class="overview-details">Interactive learning tools and
-                                                        language practice apps to enhance learning.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="course-section">
-                                <h2>📝 Assessment Structure</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Tests:</span>
-                                            <span class="overview-details">20 (short, regular assessments to track
-                                                progress and reinforce learning)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Main Tests:</span>
-                                            <span class="overview-details">5 (comprehensive evaluations to assess the
-                                                understanding of the course material)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Class Reviews:</span>
-                                            <span class="overview-details">2 (sessions to review progress, clarify
-                                                doubts, and provide feedback)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Mock (MOC) Tests:</span>
-                                            <span class="overview-details">3 (practice tests simulating the final
-                                                examination)</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="course-section">
-                                <h2>📘 Book Used</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Book Title:</span>
-                                            <span class="overview-details">Coming Soon (N3 Level)</span>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="course-section">
-                                <h2>🎓 Certification Details</h2>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Level:</span>
-                                            <span class="overview-details">Converseosional (N3)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Course Title:</span>
-                                            <span class="overview-details">Converseosional Japanese Language Course
-                                                (Coming Soon)</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span class="overview-icon"><i class="fa fa-check"></i></span>
-                                            <span class="overview-title">Certification Objective:</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <ul class="sub-list">
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Basic Grammar:</span>
-                                                    <span class="overview-details">Understanding fundamental sentence
-                                                        structures.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Vocabulary:</span>
-                                                    <span class="overview-details">Building a core set of everyday words
-                                                        and phrases.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Kanji:</span>
-                                                    <span class="overview-details">Recognition and understanding of
-                                                        approximately 650 basic characters.</span>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="overview-icon"><i class="fa fa-circle"></i></span>
-                                                    <span class="overview-title">Listening and Speaking:</span>
-                                                    <span class="overview-details">Enhancing listening comprehension and
-                                                        basic conversation skills.</span>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <p class="certification-note">Upon successful completion of the course, participants
-                                    will be awarded a Converseosional (N3) certification in Japanese.</p>
-                            </div>
-
-                        </section>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN32" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">View All Chapter</button>
+            <div class="modal fade" id="courseModalToggleN52" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN52" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title lesson-title" id="courseModalToggleLabelN52">All Lesson: Minna no
+                                Nihongo 1 </h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section>
+                                <div class="lesson-box">
+                                    <h3>Lesson 1: はじめまして (Hajimemashite) - Greetings and Introductions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 2: これは 何ですか (Kore wa nan desu ka) - Asking about things</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 3: どこですか (Doko desu ka) - Asking about places</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 4: いくつ (Ikutsu) - Asking about quantity and numbers</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 5: これは いくらですか (Kore wa ikura desu ka) - Asking about prices</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 6: なんじですか (Nanji desu ka) - Asking and telling time</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 7: あの人は 誰ですか (Ano hito wa dare desu ka) - Asking about people</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 8: ～の うち (Uchi) - Talking about family and homes</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 9: この店は 何時までですか (Kono mise wa nanji made desu ka) - Talking about stores
+                                        and
+                                        business
+                                        hours</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 10: 食べます (Tabemasu) - Verbs related to eating, drinking, and actions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 11: ～へ 行きます (He ikimasu) - Talking about going to places</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 12: どうして ですか (Doushite desu ka) - Asking about reasons</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 13: ～ませんか (Masen ka) - Invitations and suggestions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 14: ～ましょう (Mashou) - Proposals and offers</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 15: ～から (Kara) - Giving reasons</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 16: どうですか (Dou desu ka) - Asking for opinions and impressions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 17: ～の ために (No tame ni) - Purpose and intention</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 18: ～て ください (Te kudasai) - Requests</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 19: どんな (Donna) - Asking about types and kinds</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 20: ～があります (Ga arimasu) - Talking about existence and things</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 21: ～います (Imasu) - Talking about existence of people and animals</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 22: どの (Dono) - Asking about specific things</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 23: ～が あります (Ga arimasu) - More about existence and locations</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 24: ～の 前に (No mae ni) - Talking about time and sequence</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 25: ～の 後で (No ato de) - Talking about after actions</h3>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN5"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Course Overview</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal fade" id="courseModalToggleN32" aria-hidden="true" aria-labelledby="courseModalToggleLabelN32"
-            tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="courseModalToggleLabelN32">All Lesson: Coming Soon</h5>
-                        <button type="button" class="btn btn-danger btn-sm custom-btn" data-bs-dismiss="modal"
-                            aria-label="Close">
-                            <span class="fa fa-times-circle custom-icon"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p style="color: #ff0000; font-weight: bold;">Course Chapter still under maintenance.</p>
+            <!-- N4 Modal -->
+            <div class="modal fade" id="courseModalToggleN4" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN4" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="courseModalToggleLabelN4"><span class="n">N4</span>Course
+                                Overview
+                            </h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="course-overview">
+                                <div class="course-section">
+                                    <h2>📅 Course Overview</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Session Duration:</span>
+                                                <span class="overview-details">3 hours per session</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weekly Sessions:</span>
+                                                <span class="overview-details">3 sessions per week</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Weekly Course Hours:</span>
+                                                <span class="overview-details">9 hours (3 sessions x 3 hours
+                                                    each)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Course Hours:</span>
+                                                <span class="overview-details">160 hours</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weeks:</span>
+                                                <span class="overview-details">18 weeks</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Duration:</span>
+                                                <span class="overview-details">4 months 5 days</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button class="bottom-viewLission" data-bs-target="#courseModalToggleN3" data-bs-toggle="modal"
-                            data-bs-dismiss="modal">Course Overview</button>
+                                <div class="course-section">
+                                    <h2>📚 Learning Focus and Tools</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Kanji Focus:</span>
+                                                <span class="overview-details">kanji (approximately 320
+                                                    characters)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="overview-title">Learning Tools:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">RolePlay:</span>
+                                                        <span class="overview-details">Practice your language learning
+                                                            milestones through interactive role-playing
+                                                            scenarios.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Multimedia:</span>
+                                                        <span class="overview-details">Visual content (videos,
+                                                            interactive
+                                                            slides) to reinforce lessons.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Audio Lessons:</span>
+                                                        <span class="overview-details">Audio materials for improving
+                                                            listening comprehension.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Apps:</span>
+                                                        <span class="overview-details">Interactive learning tools and
+                                                            language practice apps to enhance learning.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>📝 Assessment Structure</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Tests:</span>
+                                                <span class="overview-details">25 (short, regular assessments to track
+                                                    progress and reinforce learning)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Main Tests:</span>
+                                                <span class="overview-details">5 (comprehensive evaluations to assess
+                                                    the
+                                                    understanding of the course material)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Reviews:</span>
+                                                <span class="overview-details">2 (sessions to review progress, clarify
+                                                    doubts, and provide feedback)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Mock (MOC) Tests:</span>
+                                                <span class="overview-details">3 (practice tests simulating the final
+                                                    examination)</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>📘 Book Used</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Book Title:</span>
+                                                <span class="overview-details">Minna no Nihongo 2</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Certification Details Section -->
+                                <div class="course-section">
+                                    <h2>🎓 Certification Details</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Certification Level:</span>
+                                                <span class="overview-details">Advance Beginner (N4)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Title:</span>
+                                                <span class="overview-details">Advance Beginner Japanese Language Course
+                                                    (Based on Minna no
+                                                    Nihongo 2)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="overview-title">Certification Objective:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Basic Grammar:</span>
+                                                        <span class="overview-details">Understanding fundamental
+                                                            sentence
+                                                            structures.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Vocabulary:</span>
+                                                        <span class="overview-details">Building a core set of everyday
+                                                            words
+                                                            and phrases.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Kanji:</span>
+                                                        <span class="overview-details">Recognition and understanding of
+                                                            approximately 250 basic characters.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Listening:</span>
+                                                        <span class="overview-details">Enhancing listening comprehension
+                                                            and
+                                                            basic conversation skills.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Speaking:</span>
+                                                        <span class="overview-details">Enhancing basic conversation
+                                                            skills.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="certification-note">Upon successful completion of the course, participants
+                                        will be awarded a Advance Beginner (N4) certification in Japanese.</p>
+                                </div>
+                            </section>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN42"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">View All Chapter</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="modal fade" id="courseModalToggleN42" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN42" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title lesson-title" id="courseModalToggleLabelN42">All Lesson: Minna no
+                                Nihongo
+                                2 :
+                            </h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section>
+                                <div class="lesson-box">
+                                    <h3>Lesson 1: もうすぐ です (Mou sugu desu) - Talking about time and schedules</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 2: まだ です (Mada desu) - Expressing ongoing or future actions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 3: たくさん (Takusan) - Talking about quantity and frequency</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 4: ～ている (Te iru) - Describing actions in progress</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 5: ～とおもう (To omou) - Expressing thoughts and opinions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 6: ～てみる (Te miru) - Trying something</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 7: ～ながら (Nagara) - Doing two actions at the same time</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 8: ～ほうがいい (Hou ga ii) - Giving advice</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 9: こんど (Kondo) - Talking about future plans</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 10: いっしょに (Issho ni) - Doing things together</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 11: そのとき (Sono toki) - Talking about time and sequences</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 12: どこへも (Doko e mo) - Expressing locations and movement</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 13: ～ましょうか (Mashou ka) - Offering help or suggestions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 14: ～たことがある (Ta koto ga aru) - Talking about past experiences</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 15: ～のが好き (No ga suki) - Expressing likes and dislikes</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 16: ～が好きではない (Ga suki de wa nai) - Talking about dislikes</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 17: ～に行く (Ni iku) - Going to a place for a purpose</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 18: ～にきた (Ni kita) - Talking about actions taken or coming</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 19: ～をあげる (Wo ageru) - Giving and receiving actions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 20: ～ができる (Ga dekiru) - Ability to do something</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 21: ～がほしい (Ga hoshii) - Expressing desire for something</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 22: ～をしたい (Wo shitai) - Wanting to do something</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 23: ～へ行きたい (E ikitai) - Wanting to go somewhere</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 24: ～し、～し (Shi, shi) - Listing multiple reasons or actions</h3>
+                                </div>
+                                <div class="lesson-box">
+                                    <h3>Lesson 25: ～てもいい (Temo ii) - Giving permission or asking for permission</h3>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN4"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Course Overview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- N3 Modal -->
+            <div class="modal fade" id="courseModalToggleN3" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN3" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="courseModalToggleLabelN3"><span class="n">N3</span>Course
+                                Overview
+                            </h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="course-overview">
+                                <div class="course-section">
+                                    <h2>📅 Course Overview</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Session Duration:</span>
+                                                <span class="overview-details">3 hours per session</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weekly Sessions:</span>
+                                                <span class="overview-details">3 sessions per week</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Weekly Course Hours:</span>
+                                                <span class="overview-details">9 hours (3 sessions x 3 hours
+                                                    each)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Course Hours:</span>
+                                                <span class="overview-details">180 hours</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Total Weeks:</span>
+                                                <span class="overview-details">20 weeks</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Duration:</span>
+                                                <span class="overview-details">5 months</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>📚 Learning Focus and Tools</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Kanji Focus:</span>
+                                                <span class="overview-details">Kanji (approximately 650
+                                                    characters)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="overview-title">Learning Tools:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">RolePlay:</span>
+                                                        <span class="overview-details">Practice your language learning
+                                                            milestones through interactive role-playing
+                                                            scenarios.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Multimedia:</span>
+                                                        <span class="overview-details">Visual content (videos,
+                                                            interactive
+                                                            slides) to reinforce lessons.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Audio Lessons:</span>
+                                                        <span class="overview-details">Audio materials for improving
+                                                            listening comprehension.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Apps:</span>
+                                                        <span class="overview-details">Interactive learning tools and
+                                                            language practice apps to enhance learning.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>📝 Assessment Structure</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Tests:</span>
+                                                <span class="overview-details">20 (short, regular assessments to track
+                                                    progress and reinforce learning)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Main Tests:</span>
+                                                <span class="overview-details">5 (comprehensive evaluations to assess
+                                                    the
+                                                    understanding of the course material)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Class Reviews:</span>
+                                                <span class="overview-details">2 (sessions to review progress, clarify
+                                                    doubts, and provide feedback)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Mock (MOC) Tests:</span>
+                                                <span class="overview-details">3 (practice tests simulating the final
+                                                    examination)</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>📘 Book Used</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Book Title:</span>
+                                                <span class="overview-details">Coming Soon (N3 Level)</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-section">
+                                    <h2>🎓 Certification Details</h2>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Certification Level:</span>
+                                                <span class="overview-details">Converseosional (N3)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                        style="fill: red;">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                    </svg></span>
+                                                <span class="overview-title">Course Title:</span>
+                                                <span class="overview-details">Converseosional Japanese Language Course
+                                                    (Coming Soon)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span class="overview-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="red" class="bi bi-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                                                    </svg>
+                                                </span>
+                                                <span class="overview-title">Certification Objective:</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="sub-list">
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></i></span>
+                                                        <span class="overview-title">Basic Grammar:</span>
+                                                        <span class="overview-details">Understanding fundamental
+                                                            sentence
+                                                            structures.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Vocabulary:</span>
+                                                        <span class="overview-details">Building a core set of everyday
+                                                            words
+                                                            and phrases.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Kanji:</span>
+                                                        <span class="overview-details">Recognition and understanding of
+                                                            approximately 650 basic characters.</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <span class="overview-icon"><svg
+                                                                xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-arrow-right-short" viewBox="0 0 16 16"
+                                                                style="fill: red;">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                                            </svg></span>
+                                                        <span class="overview-title">Listening and Speaking:</span>
+                                                        <span class="overview-details">Enhancing listening comprehension
+                                                            and
+                                                            basic conversation skills.</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="certification-note">Upon successful completion of the course, participants
+                                        will be awarded a Converseosional (N3) certification in Japanese.</p>
+                                </div>
+
+                            </section>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN32"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">View All Chapter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="courseModalToggleN32" aria-hidden="true"
+                aria-labelledby="courseModalToggleLabelN32" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="courseModalToggleLabelN32">All Lesson: Coming Soon</h5>
+                            <button type="button" class="btn btn-danger btn-sm close-btn" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span class="fa fa-times-circle close-icon"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="color: #ff0000; font-weight: bold;">Course Chapter still under maintenance.</p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="bottom-viewLission" data-bs-target="#courseModalToggleN3"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Course Overview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo-container">
+                    <img src="../images/logo.jpg" class="footer-logo">
+                    <h3><span class="mat">MAT</span> Services BD</h3>
+                </div>
+                <p class="logo-content">Best Japanese Language Institute in Dhaka, Bangladesh that assists students in
+                    higher study in
+                    Japan and processes Japanese Visa.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Our Office Branches</h3>
+                <div class="office-branches">
+                    <button onclick="showBranch('Dhaka')" class="branch-button">Dhaka Office</button>
+                    <button onclick="showBranch('Chattogram')" class="branch-button">Chattogram Office</button>
+                    <button onclick="showBranch('Japan')" class="branch-button">Japan Office</button>
+                </div>
+                <div id="office-contact-info" class="contact-box branch-contact-info"></div>
+            </div>
+            <div class="footer-column">
+                <h3>Find Us Online</h3>
+                <p>Please follow our social media links to get hourly updates on our organization’s current affairs,
+                    activities, and news.</p>
+                <p>
+                    <a href="https://web.facebook.com/MATServicesBDnew" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/matservicesbd/posts/?feedView=all" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Dr.Md.AsifurRahman" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-bottom-left">
+                <div class="copyright">
+                    <a href="#">MAT Services BD</a> &copy; 2024 All Rights Reserved
+                </div>
+            </div>
+            <div class="footer-bottom-right">
+                <ul class="footer-nav">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/courseDetailsNav.js"></script>
+    <script src="../js/branch.js"></script>
 </body>
 
 </html>

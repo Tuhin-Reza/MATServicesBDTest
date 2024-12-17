@@ -76,6 +76,10 @@
     line-height: 30px;
 }
 
+.btn-link:hover {
+    cursor: pointer;
+}
+
 
 
 

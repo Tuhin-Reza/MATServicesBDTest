@@ -1,3 +1,41 @@
+.template_hero {
+    background-image: url("../images/hero_section/courseDetails6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.template_hero-title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+.courses-heading {
+    font-family: Great Vibes;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 100px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+
 .course-container {
     height: 100vh;
     display: flex;
@@ -50,7 +88,7 @@
     text-align: center;
 }
 
-.bottom-half .title {
+.bottom-half .course-card-title {
     font-size: 22px;
     color: #000000;
     margin-bottom: 2px;
@@ -79,7 +117,7 @@
 
 
 /* Row layout for the cards */
-.row {
+.course-card-row {
     display: flex;
     justify-content: space-around;
     gap: 100px;
@@ -109,16 +147,18 @@
 .modal-title {
     text-align: center;
     margin: 0;
+    font-size: 3rem;
 }
 
 .n {
-    font-size: 2rem;
+    font-size: 5rem;
     color: red;
-    padding-left: 2rem;
+    padding-left: 5rem;
     padding-right: 10px;
 }
 
 .course-overview {
+
     margin-top: 0;
     padding-top: 0;
     font-size: 12px;
@@ -129,6 +169,7 @@
 }
 
 .course-section {
+    color: #000000;
     padding-top: 30px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -145,8 +186,14 @@
     margin-right: 8px;
 }
 
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
 .course-section h2 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -156,8 +203,13 @@
 }
 
 .course-section ul li {
-    font-size: 1rem;
-    padding: 0.5rem 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: -5px;
+
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
 }
@@ -173,15 +225,12 @@
     padding: 0;
     padding-left: 2rem;
 }
-.course-section ul li{
-    margin: 0;
-    padding: 0;
-    margin-bottom: -10px;
-}
+
+
 .course-section ul li ul li {
     margin: 0;
     padding: 0;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 
 .overview-details {
@@ -190,8 +239,8 @@
 
 
 .certification-note {
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 1.8rem;
+    margin-top: 5rem;
     background-color: #E8F5E9;
     padding: 1rem;
     border-radius: 5px;
@@ -199,7 +248,7 @@
     margin-right: 20px;
 }
 
-.custom-btn {
+.close-btn {
     margin-right: 45px;
     background-color: #ff0000;
     width: 35px;
@@ -212,17 +261,17 @@
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.custom-icon {
-    font-size: 1.5rem;
+.close-icon {
+    font-size: 2rem;
     color: white;
 }
 
-.custom-btn:hover {
+.close-btn:hover {
     background-color: #ff0000;
     transform: scale(1.1);
 }
 
-.custom-btn:hover .custom-icon {
+.close-btn:hover .close-icon {
     color: #f8f9fa;
 }
 
@@ -232,8 +281,8 @@
     border: none;
     background-color: #ff0000;
     color: #000000;
-    margin-right: 2.5rem;
-    padding: .5rem 1rem;
+    margin-right: 4rem;
+    padding: 1rem 1.5rem;
     border-radius: 5px;
 }
 
@@ -245,8 +294,8 @@
 
 /* *****************************Lesson*********************** */
 .lesson-box {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 15px;
+    margin: 10px 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -254,6 +303,10 @@
 
 .lesson-box h3 {
     margin: 0;
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.lesson-title {
+    margin-left: 22px;
 }

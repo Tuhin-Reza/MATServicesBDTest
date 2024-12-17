@@ -1,15 +1,25 @@
 /* For Media Query */
 @media (min-width: 320px) and (max-width: 667px) {
+    .template_hero {
+        background-image: url("/images/hero_section/courseDetailsPhn.jpg");
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .lanHide {
+        display: none;
+    }
+
     .course-container {
         padding-top: 50px;
         padding-bottom: 50px;
         height: auto;
     }
+
     .modal-title {
-        margin-left: 0px;
+        margin-left: -30px;
     }
 
-    .custom-btn {
+    .close-btn {
         margin-right: 10px;
     }
 
@@ -24,7 +34,7 @@
         width: 350px;
     }
 
-    .row {
+    .course-card-row {
         flex-direction: column;
         justify-content: center;
     }
@@ -41,18 +51,18 @@
     .course-section {
         margin-left: 0;
         padding-left: 10px;
-        padding: 10px;
+        padding: 15px;
+        text-align: justify;
     }
 
     .course-section ul,
     .course-section ul li {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    .course-section ul li{
         padding: 0;
         margin: 0;
+        margin-bottom: 5px;
+        text-align: justify;
     }
+
     .sub-list {
         margin-left: 0;
         padding-left: 0;
@@ -64,15 +74,32 @@
 
     .overview-title {
         padding: 0;
-        padding-left: -5px;
-        margin-left: -10px;
+        margin-left: 2px;
     }
 
     .overview-details {
         padding-left: 5px;
     }
-    .course-section ul li ul li{
+
+    .course-section ul li ul li {
         margin-left: 0px;
+        text-align: justify;
+    }
+
+    .lesson-box h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #000000;
+    }
+
+    .lesson-title {
+        margin-left: -10px;
+    }
+
+    .bottom-viewLission {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
 
