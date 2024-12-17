@@ -1,7 +1,7 @@
 /* For Media Query */
 @media (min-width: 320px) and (max-width: 667px) {
     .template_hero {
-        background-image: url("/images/hero_section/courseDetailsPhn.jpg");
+        background-image: url("../../images/hero_section/courseDetailsPhn.jpg");
         background-color: rgba(0, 0, 0, 0.5);
     }
 
