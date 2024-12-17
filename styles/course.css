@@ -1,5 +1,5 @@
 .template_hero {
-    background-image: url("../images/hero_section/courseDetails6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../images/hero_section/courseDetails.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;

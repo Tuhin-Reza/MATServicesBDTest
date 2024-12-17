@@ -1,5 +1,5 @@
 .languageCourse_hero {
-    background-image: url("../images/hero_section/bg19.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../images/hero_section/languageRequired.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -14,6 +14,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .languageCourse_hero-title {
@@ -79,9 +80,6 @@
 .btn-link:hover {
     cursor: pointer;
 }
-
-
-
 
 /* Course container */
 .course_cards-container {
