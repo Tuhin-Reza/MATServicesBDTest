@@ -1,0 +1,49 @@
+@media (min-width: 320px) and (max-width: 667px) {
+    .languageCourse_hero {
+        background-image: url("../../images/hero_section/languageCoursePhone.jpg");
+    }
+
+    .why-language-required {
+        margin: 0;
+    }
+
+    .language-required h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .language-required {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .language-reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .reason h3 {
+        margin-bottom: 2.5rem;
+    }
+
+    .reason p {
+        font-size: 2rem;
+    }
+
+    .part-time-job-columns {
+        flex-direction: column;
+    }
+
+    .course-heading button {
+        margin-top: 30px;
+        margin-bottom: -70px;
+    }
+
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .languageCourse_hero {
+        background-image: url("../../images/hero_section/tabletBG6.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        background-size: cover;
+        background-position: center;
+    }
+}

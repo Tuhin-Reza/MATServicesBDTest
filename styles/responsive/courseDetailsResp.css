@@ -1,6 +1,5 @@
-/* For Media Query */
 @media (min-width: 320px) and (max-width: 667px) {
-    .template_hero {
+    .hero-section {
         background-image: url("../../images/hero_section/courseDetailsPhn.jpg");
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -9,18 +8,11 @@
         display: none;
     }
 
+
     .course-container {
         padding-top: 50px;
         padding-bottom: 50px;
         height: auto;
-    }
-
-    .modal-title {
-        margin-left: -30px;
-    }
-
-    .close-btn {
-        margin-right: 10px;
     }
 
     .course-container {
@@ -86,16 +78,25 @@
         text-align: justify;
     }
 
+    /* ========================= Lesson Section ========================= */
     .lesson-box h3 {
         margin: 0;
         font-size: 1.5rem;
         color: #000000;
     }
 
-    .lesson-title {
-        margin-left: -10px;
+    /* ========================= Model Classes ========================= */
+
+    /* ========================= Close Button ========================= */
+    .courseTitle {
+        padding-left: 10px;
     }
 
+    .close-btn {
+        margin-right: 10px;
+    }
+
+    /* ========================= Bottom View Lission ========================= */
     .bottom-viewLission {
         display: block;
         margin: 0 auto;
