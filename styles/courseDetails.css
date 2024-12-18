@@ -115,14 +115,14 @@
     text-decoration: none;
     border: none;
     background-color: #ff0000;
+    color: #ffffff;
     border-radius: 5px;
     padding: 10px 15px;
-    color: #000000;
     margin-top: 10px;
 }
 
 .course-module:hover {
-    color: #ffffff;
+    color: #000000;
     border: none;
 }
 
