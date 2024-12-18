@@ -1,0 +1,13 @@
+@media (min-width: 320px) and (max-width: 667px) {
+    .why-choose-us-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    .why-choose-us-container {
+        flex-direction: column;
+        height: auto;
+    }
+}

@@ -1,0 +1,126 @@
+@media (min-width: 320px) and (max-width: 667px) {
+
+    /* ========================= mat-who-we-are ========================= */
+    .mat-who-we-are {
+        padding-bottom: 200px;
+    }
+
+    /* ========================= mat-who-container ========================= */
+    .mat-who-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    /* ========================= mat-left-side ========================= */
+    .mat-left-side {
+        padding-left: 0;
+    }
+
+    .mat-left-side h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* ========================= mat-profile-container ========================= */
+    .mat-profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .mat-ceo-profile>div>h3 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    /* ========================= mat-row ========================= */
+    .mat-row {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mat-single-services-block {
+        width: 100%;
+    }
+
+    /* ========================= mat-appointment-container ========================= */
+    .mat-appointment-container {
+        flex-direction: column;
+        margin-top: -150px;
+    }
+
+    .mat-appointment-call {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mat-appointment-description {
+        width: auto;
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mat-appointment-link>button {
+        margin-top: 20px;
+    }
+}
+
+/* ========================= Tablets and Small Desktops (668px to 1024px) ========================= */
+@media (min-width: 668px) and (max-width: 1024px) {
+    .mat-who-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .mat-profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    /* ========================= mat-row ========================= */
+    .mat-row {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* ========================= mat-appointment-container ========================= */
+    .mat-appointment-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mat-appointment-description {
+        width: auto;
+        line-height: 25px;
+        padding: 20px 10px;
+        font-size: 1.4rem;
+    }
+
+    .mat-appointment-call {
+        border-right: none;
+        margin-bottom: 20px;
+    }
+}
+
+/* ========================= Desktops (1025px and above) ========================= */
+@media (min-width: 1025px) {
+
+    /* ========================= mat-row ========================= */
+    .mat-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+}

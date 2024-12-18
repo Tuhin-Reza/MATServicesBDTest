@@ -1,3 +1,4 @@
+/* ========================= why-choose-us-container ========================= */
 .why-choose-us-container {
     margin-top: 50px;
     display: flex;
@@ -6,6 +7,7 @@
     overflow: hidden;
 }
 
+/* ========================= why-choose-us-left ========================= */
 .why-choose-us-left {
     flex: 1;
 }
@@ -16,6 +18,7 @@
     object-fit: cover;
 }
 
+/* ========================= why-choose-us-floating ========================= */
 .why-choose-us-floating {
     animation-name: why-choose-us-floating;
     animation-duration: 3s;
@@ -39,21 +42,19 @@
     }
 }
 
-/* Right side (content) */
+/* ========================= why-choose-us-right ========================= */
 .why-choose-us-right {
     flex: 1;
     padding: 5rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-
     box-sizing: border-box;
     margin-top: -2rem;
 }
 
-
+/* ========================= why-choose-us__heading ========================= */
 .why-choose-us__heading h4 {
     font-family: Great Vibes;
     font-size: 5rem;
@@ -61,10 +62,12 @@
     word-spacing: 15px;
 }
 
+/* ========================= choose-us ========================= */
 .choose-us {
     color: #FF0000;
 }
 
+/* ========================= why-choose-us__content ========================= */
 .why-choose-us__content {
     font-family: Georgia, serif;
     font-size: 2rem;
@@ -84,11 +87,11 @@
     text-align: justify;
 }
 
+/* ========================= why-choose-us-icon ========================= */
 .why-choose-us-icon {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,18 +99,4 @@
     font-size: 2.5rem;
     margin-right: .5rem;
     flex-shrink: 0;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .why-choose-us-container {
-        flex-direction: column;
-        height: auto;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-    .why-choose-us-container {
-        flex-direction: column;
-        height: auto;
-    }
 }
