@@ -25,17 +25,20 @@
     border-radius: 5px;
 }
 
+/* ========================= why-language-required ========================= */
 .why-language-required {
     font-size: 20px;
     margin: 50px;
 }
 
-.language-required {
+/* ========================= language-required__container ========================= */
+.language-required__container {
     margin: 0 auto;
     padding: 20px;
 }
 
-.language-required h2 {
+/* ========================= language-required__title ========================= */
+.language-required__title {
     font-family: "Great Vibes";
     font-size: 5rem;
     margin: 0;
@@ -43,7 +46,13 @@
     margin-bottom: 50px;
 }
 
-.language-reasons {
+/* ========================= language-required__highlight ========================= */
+.language-required__highlight {
+    font-weight: bold;
+}
+
+/* ========================= language-required__reasons ========================= */
+.language-required__reasons {
     font-family: Georgia, serif;
     font-size: 2.3rem;
     display: grid;
@@ -53,42 +62,73 @@
     text-align: justify;
 }
 
-.reason {
+/* ========================= language-required__reason ========================= */
+.language-required__reason {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 30px;
 }
 
-.reason h3 {
+/* ========================= language-required__reason-title ========================= */
+.language-required__reason-title {
     color: #FF0000;
     margin: 0;
 }
 
-.reason p {
+/* ========================= language-required__reason-description ========================= */
+.language-required__reason-description {
     font-family: Georgia, serif;
     font-size: 2rem;
     line-height: 30px;
 }
 
-.part-time-job-columns {
+/* ========================= language-required__part-time-job ========================= */
+.language-required__part-time-job {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.column {
+/* ========================= language-required__part-time-job-column ========================= */
+.language-required__part-time-job-column {
     flex: 1;
 }
 
-.course-heading {
+/* ========================= language-required__part-time-job-column--first ========================= */
+.language-required__part-time-job-column--first {
+    flex: 1;
+}
+
+/* ========================= language-required__part-time-job-description ========================= */
+.language-required__part-time-job-description {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+/* ========================= language-required__part-time-job-advantage ========================= */
+.language-required__part-time-job-advantage {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+/* ========================= language-required__highlight--on ========================= */
+.language-required__highlight--on {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* ========================= Course Details Button ========================= */
+.course-details-heading {
     font-family: "Great Vibes";
     font-size: 5rem;
     margin: 0;
     text-align: center;
 }
 
-.course-heading button {
+.course-details-heading button {
     font-family: Georgia, serif;
     font-size: 2.5rem;
     text-decoration: none;
@@ -99,14 +139,10 @@
     border: none;
 }
 
-.course-heading button:hover {
+.course-details-heading button:hover {
     color: #000000;
 }
 
-.language {
-    color: #FF0000;
-}
-
-.btn-link:hover {
+.course-details-btn-link:hover {
     cursor: pointer;
 }

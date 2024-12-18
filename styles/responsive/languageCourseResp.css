@@ -3,37 +3,45 @@
         background-image: url("../../images/hero_section/languageCoursePhone.jpg");
     }
 
+    /* ========================= why-language-required ========================= */
     .why-language-required {
         margin: 0;
     }
 
-    .language-required h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .language-required {
+    /* ========================= language-required__container ========================= */
+    .language-required__container {
         margin: 0 auto;
         padding: 20px;
     }
 
-    .language-reasons {
+    /* ========================= language-required__title ========================= */
+    .language-required__title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* ========================= language-required__reasons ========================= */
+    .language-required__reasons {
         grid-template-columns: 1fr;
     }
 
-    .reason h3 {
+    /* ========================= language-required__reason-title ========================= */
+    .language-required__reason-title {
         margin-bottom: 2.5rem;
     }
 
-    .reason p {
+    /* ========================= language-required__reason-description ========================= */
+    .language-required__reason-description {
         font-size: 2rem;
     }
 
-    .part-time-job-columns {
+    /* ========================= language-required__part-time-job ========================= */
+    .language-required__part-time-job {
         flex-direction: column;
     }
 
-    .course-heading button {
+    /* ========================= Course Details Button ========================= */
+    .course-details-heading button {
         margin-top: 30px;
         margin-bottom: -70px;
     }
