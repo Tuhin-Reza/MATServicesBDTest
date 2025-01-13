@@ -1,0 +1,152 @@
+@media (min-width: 320px) and (max-width: 667px) {
+
+    /* ========================= MAT Hero Section========================= */
+    .mat-hero {
+        height: 100vh;
+        background-image: url('../../images/hero_section/heroPhone3.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        gap: 20px;
+    }
+
+    .mat-hero-welcomeContent {
+        max-width: 90%;
+        padding: 2em 0;
+    }
+
+    .mat-hero-welcomeContent h1 {
+        font-size: 2rem;
+    }
+
+    .mat-hero-welcomeContent p {
+        font-size: 1.2rem;
+    }
+
+    /* ========================= HERO SECTION Middle Link ROW ========================= */
+    .mat-hero-middle-link-row {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .mat-hero-middle-link-block {
+        width: calc(80% - 10px);
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .mat-hero-middle-link-block-hovicon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .mat-hero-middle-link-block-hovicon i,
+    .mat-hero-middle-link-block-hovicon span {
+        font-size: 20px;
+    }
+
+    .mat-hero-middle-link-block-hovicon span {
+        font-size: 13px;
+    }
+
+    .mat-hero-middle-link-block-hovicon:after {
+        box-shadow: 0 0 0 3px #FF0000;
+    }
+
+
+    /* ========================= MAT News Line Section ========================= */
+    .mat-news-line {
+        margin-top: 110px;
+    }
+
+    .mat-news-button {
+        padding-top: 1.6rem;
+    }
+
+    .news-feed {
+        font-size: 17px;
+        font-weight: bolder;
+    }
+}
+
+/* ========================= Tablet Devices (481px to 1024px) ========================= */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+    /* ========================= MAT Hero Section ========================= */
+    .mat-hero {
+        background-image: url('../../images/hero_section/tabletBG6.jpg'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        background-blend-mode: overlay;
+        gap: 80px;
+    }
+
+    .mat-hero-welcomeContent {
+        margin-top: 300px;
+        max-width: 70%;
+        padding: 3em 0;
+    }
+
+    .mat-hero-welcomeContent h1 {
+        font-size: 5rem;
+        word-spacing: 10px;
+    }
+
+    .mat-hero-welcomeContent-title {
+        font-size: 8rem;
+    }
+
+    .mat-hero-welcomeContent p {
+        font-size: 3rem;
+    }
+
+    /* ========================= HERO SECTION Middle Link ROW ========================= */
+    .mat-hero-middle-link {
+        margin-top: -300px;
+        margin-bottom: 138px;
+    }
+
+    .mat-hero-middle-link-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mat-hero-middle-link-block {
+        width: 25%;
+        height: 120px;
+    }
+
+    .mat-hero-middle-link-block-hovicon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mat-hero-middle-link-block-hovicon i,
+    .mat-hero-middle-link-block-hovicon span {
+        font-size: 55px;
+    }
+
+    .mat-hero-middle-link-block-hovicon span {
+        font-size: 15px;
+    }
+
+    .mat-hero-middle-link-block-hovicon:after {
+        box-shadow: 0 0 0 3px #FF0000;
+    }
+
+    /* ========================= MAT News Line Section ========================= */
+    .mat-news-line {
+        margin-top: 110px;
+    }
+
+    .mat-news-button {
+        padding-top: 1.6rem;
+    }
+
+    .news-feed {
+        font-size: 17px;
+        font-weight: bolder;
+    }
+}
