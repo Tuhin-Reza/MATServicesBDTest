@@ -91,6 +91,11 @@
     gap: 10px;
 }
 
+.mat-who-container strong {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
 /* ========================= mat-ceo-profile ========================= */
 .mat-ceo-profile {
     display: flex;
@@ -146,6 +151,9 @@
 
 /* ========================= mat-services-area ========================= */
 .mat-services-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: -30px;
     color: #000000;
 }

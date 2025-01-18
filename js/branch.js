@@ -1,18 +1,18 @@
 const branchDetails = {
     "Dhaka": {
-        address: "House-620-22, Road 09, Mirpur DOHS, Dhaka 1216",
+        address: "House-620-22, Road 09, Mirpur DOHS, Dhaka 1216,Bangladesh",
         phone: "+880 19 9488 4302",
-        email: "matservicesbd@gmail.com"
+        email: "info@matservicesbd.com"
     },
     "Chattogram": {
-        address: "Mim Villa, 40/A, Katalganj Residential Area, Road No-4, Panchlaish, Chittagong",
+        address: "Mim Villa, 40/A, Katalganj Residential Area, Road No-4, Panchlaish, Chittagong,Bangladesh",
         phone: "+880 18 1933 1429",
-        email: "matservicesbd@gmail.com"
+        email: "info@matservicesbd.com"
     },
     "Japan": {
         address: "JP office: 1-8-23-203 Maizuru, Chuo ku, Fukuoka 810-0073 Japan",
         phone: "+81 92 123 4567",
-        email: "matservicesbd@gmail.com"
+        email: "info@matservicesbd.com"
     }
 };
 

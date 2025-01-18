@@ -8,7 +8,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     event.preventDefault();
     console.log("Form submission started");
 
-    // Retrieve form data
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("subject").value;
@@ -18,10 +17,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     submitBtn.textContent = "Sending...";
     submitBtn.classList.add("sending");
 
-    // Log data to ensure it is being retrieved correctly
     console.log("Data:", { name, email, subject, message });
 
-    // Send email using EmailJS
     emailjs.send("service_jdnr1gp", "template_y4lq8iu", {
         from_name: subject,
         first_name: name,
