@@ -1,11 +1,11 @@
 const branchDetails = {
     "Dhaka": {
-        address: "Nahar Nibash, 2A, H-620-622, Road 09, Mirpur DOHS, Dhaka 1216,Bangladesh",
+        address: "Nahar Nibash, 2A, H:620-622, Road 09, Mirpur DOHS, Dhaka 1216, Bangladesh",
         phone: "+880 19 9488 4302",
         email: "info@matservicesbd.com"
     },
     "Chattogram": {
-        address: "Mim Villa, 40/A, Katalganj Residential Area, Road No-4, Panchlaish, Chittagong,Bangladesh",
+        address: "Mim Villa, 40/A, Katalganj Residential Area, Road No-4, Panchlaish, Chittagong, Bangladesh",
         phone: "+880 18 1933 1429",
         email: "info@matservicesbd.com"
     },
