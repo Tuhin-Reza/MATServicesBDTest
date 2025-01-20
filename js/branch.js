@@ -1,6 +1,6 @@
 const branchDetails = {
     "Dhaka": {
-        address: "House-620-22, Road 09, Mirpur DOHS, Dhaka 1216,Bangladesh",
+        address: "Nahar Nibash,2A,H-620-622, Road 09, Mirpur DOHS, Dhaka 1216,Bangladesh",
         phone: "+880 19 9488 4302",
         email: "info@matservicesbd.com"
     },
