@@ -96,7 +96,7 @@
 }
 
 /* Adjustments for mobile responsiveness */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .upcomming {
         flex-direction: column;
         height: auto;
@@ -135,10 +135,15 @@
         flex-direction: row;
         gap: 10px;
     }
+
+    .location {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 /* Adjustments for tablet responsiveness */
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .upcomming {
         flex-direction: column;
         height: auto;
@@ -176,6 +181,11 @@
     }
 
     .date-time {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .location {
         flex-direction: row;
         gap: 10px;
     }
