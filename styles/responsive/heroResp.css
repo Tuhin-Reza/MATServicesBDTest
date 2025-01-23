@@ -112,3 +112,9 @@
     }
 
 }
+@media (min-width: 1025px) and (max-width: 1278px){
+    .mat-hero-welcomeContent {
+        width: 40%;
+    }
+
+}

@@ -66,6 +66,7 @@
     animation:
         mat-hero-welcomeContent-gm-slidein 3s 1 ease-out,
         mat-hero-welcomeContent-shine-border 5s infinite linear;
+    padding-bottom: 10px;
 }
 
 @keyframes mat-hero-welcomeContent-gm-slidein {
