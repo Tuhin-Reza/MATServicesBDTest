@@ -29,11 +29,16 @@
         padding-bottom: 20px;
     }
 
+    .bottom-border {
+        width: 35%;
+        margin-top: -180px;
+    }
 
     /* ========================= HERO SECTION Middle Link ROW ========================= */
     .mat-hero-middle-link-row {
         justify-content: center;
         align-items: center;
+        margin-top: -180px;
     }
 
     .mat-hero-middle-link-block {
@@ -83,6 +88,9 @@
         word-spacing: 10px;
     }
 
+    .bottom-border {
+        width: 40%;
+    }
 
     /* ========================= HERO SECTION Middle Link ROW ========================= */
     .mat-hero-middle-link-row {
@@ -112,7 +120,8 @@
     }
 
 }
-@media (min-width: 1025px) and (max-width: 1278px){
+
+@media (min-width: 1025px) and (max-width: 1278px) {
     .mat-hero-welcomeContent {
         width: 40%;
     }

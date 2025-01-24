@@ -18,6 +18,7 @@
 }
 
 .mat-hero-welcomeContent,
+.bottom-border,
 .mat-hero-middle-link-row {
     margin: 0 auto;
     display: flex;
@@ -31,13 +32,17 @@
     grid-row: 2;
 }
 
-.mat-hero-middle-link-row {
+.bottom-border {
     grid-row: 3;
+}
+
+.mat-hero-middle-link-row {
+    grid-row: 4;
 }
 
 /* ========================= MAT News Line Section ========================= */
 .mat-news-line {
-    grid-row: 4;
+    grid-row: 5;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -59,14 +64,23 @@
     margin: 0 auto;
     overflow: hidden;
     will-change: transform;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
+    animation:
+        mat-hero-welcomeContent-gm-slidein 3s 1 ease-out,
+        mat-hero-welcomeContent-shine-border 5s infinite linear;
+    padding-bottom: 10px;
+}
+
+.bottom-border {
+    width: 27%;
+    border: 3px solid red;
+    margin-top: -220px;
+    margin-bottom: 0px;
+    padding-top: 0;
     border-image-slice: 1;
     border-image-source: linear-gradient(100deg, transparent, red, transparent);
     animation:
         mat-hero-welcomeContent-gm-slidein 3s 1 ease-out,
         mat-hero-welcomeContent-shine-border 5s infinite linear;
-    padding-bottom: 10px;
 }
 
 @keyframes mat-hero-welcomeContent-gm-slidein {
@@ -151,6 +165,7 @@
     width: 100%;
     animation: mat-hero-middle-link-row-gm-slide-right-to-left 3s 1;
     margin-bottom: 0px;
+    margin-top: -250px;
 }
 
 @keyframes mat-hero-middle-link-row-gm-slide-right-to-left {
