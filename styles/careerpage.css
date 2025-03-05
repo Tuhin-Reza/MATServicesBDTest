@@ -51,15 +51,11 @@
     margin-bottom: 8px;
     color: #000;
 }
-
-/* Grid Layout */
 .job-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-
-/* First Row: Full-width across columns */
 .grid-item:nth-child(1) {
     grid-column: span 2;
 }
@@ -67,27 +63,37 @@
 .grid-item:nth-child(2),
 .grid-item:nth-child(3) {
     grid-column: span 1;
-    /* Each item will take 1 column in the second row */
 }
 
 .grid-item:nth-child(4) {
     grid-column: span 2;
 }
 
-/* Responsive Design: Stack all content on smaller screens */
 @media (max-width: 768px) {
     .job-grid {
         grid-template-columns: 1fr;
-        /* Single column for smaller screens */
+        text-align: justify;
+    }
+    .responsibilities
+    {
+        padding-left: 20px;
+    }
+    .grid-item:nth-child(1) {
+        grid-column: span 2;
+    }
+    
+    .grid-item:nth-child(2) {
+        grid-column: span 2;
+    }
+    .grid-item:nth-child(3) {
+        grid-column: span 2;
     }
 
-    /* Make the first row take full width on smaller screens */
-    .grid-item:nth-child(1) {
-        grid-column: span 1;
+    .grid-item:nth-child(4) {
+        grid-column: span 2;
     }
 
     .job-card {
         padding: 15px;
-        /* Slightly reduce padding for small screens */
     }
 }
