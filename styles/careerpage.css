@@ -1,0 +1,93 @@
+.studyinJapan_hero {
+    background-image: url("../images/hero_section/careerpage.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.studyinJapan_hero-title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FF0000;
+    border-radius: 5px;
+}
+
+/* Career */
+.job-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.job-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    max-width: 80vw;
+}
+
+.job-card h3 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.job-card p {
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* Grid Layout */
+.job-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* First Row: Full-width across columns */
+.grid-item:nth-child(1) {
+    grid-column: span 2;
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+    grid-column: span 1;
+    /* Each item will take 1 column in the second row */
+}
+
+.grid-item:nth-child(4) {
+    grid-column: span 2;
+}
+
+/* Responsive Design: Stack all content on smaller screens */
+@media (max-width: 768px) {
+    .job-grid {
+        grid-template-columns: 1fr;
+        /* Single column for smaller screens */
+    }
+
+    /* Make the first row take full width on smaller screens */
+    .grid-item:nth-child(1) {
+        grid-column: span 1;
+    }
+
+    .job-card {
+        padding: 15px;
+        /* Slightly reduce padding for small screens */
+    }
+}
